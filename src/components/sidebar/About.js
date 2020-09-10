@@ -1,12 +1,22 @@
 import React from "react";
 import styles from "./About.module.scss";
 import CollapsibleSection from "../containers/CollapsibleSection";
+import { ReactComponent as GithubIcon } from "../../assets/icons/icon_github.svg";
 
 export default function About() {
   return (
     <CollapsibleSection title="About" open={true}>
       <div className={styles.about}>
-        <p>version 1.0</p>
+        <p>
+          <a
+            href="https://github.com/crsnbrt/keysim"
+            rel="noopener noreferrer"
+            target="_blank"
+            className={styles.github}
+          >
+            <GithubIcon /> Keyboard Simulator on Github
+          </a>
+        </p>
         <p>
           Keyboard Simulator is built using{" "}
           <a
