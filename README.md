@@ -2,7 +2,7 @@
 
 https://keyboardsimulator.xyz/
 
-design and test virtual keyboards,
+design and test virtual keyboards.
 
 ![alt example image](./public/preview.png?raw=true)
 
