@@ -1,0 +1,59 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.btn {
+  border: none;
+  border-radius: $primary-border-radius;
+  color: var(--light-3);
+  background: var(--light-1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  transition: all 0.1s;
+  transition: all 0.2s;
+  cursor: pointer;
+  font-weight: 600;
+  height: $primary-field-height;
+  display: flex;
+  align-items: center;
+  svg {
+    width: 20px;
+    margin-right: 0.5em;
+  }
+  &:focus {
+    text-decoration: underline;
+  }
+  &:focus,
+  &:hover {
+    color: var(--accent-text);
+    background: var(--accent);
+    span {
+      color: var(--accent-text);
+    }
+    svg {
+      fill: var(--accent-text);
+    }
+  }
+}
+
+.btnText {
+  padding: 0.5em 0 !important;
+  background: transparent;
+  text-decoration: underline;
+  align-items: center;
+  color: var(--accent);
+  font-weight: 400;
+  display: flex;
+  svg {
+    width: 20px;
+    margin-right: 0.5em;
+  }
+  &:focus,
+  &:hover {
+    color: white;
+    background: transparent !important;
+    svg {
+      fill: var(--accent);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "short_name": "Keysim",
+    "name": "Keyboard Simulator",
+    "icons": [
+        {
+            "src": "favicon.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "logo192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "logo512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "maskable_icon.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#614dff",
+    "background_color": "#202024"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "hammerhead",
+  "label": "Hammerhead",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#1f2a44",
+      "color": "#49c5b1"
+    },
+    "mods": {
+      "background": "#384967",
+      "color": "#49c5b1"
+    },
+    "accent": {
+      "background": "#49c5b1",
+      "color": "#384967"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

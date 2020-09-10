@@ -1,0 +1,20 @@
+{
+  "id": "bow",
+  "label": "Black on White",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#dddddd",
+      "color": "#222222"
+    },
+    "mods": {
+      "background": "#dddddd",
+      "color": "#222222"
+    },
+    "accent": {
+      "background": "#dddddd",
+      "color": "#222222"
+    }
+  },
+  "override": {}
+}

@@ -1,0 +1,45 @@
+{
+  "id": "milkshake",
+  "manufacturer": "kat",
+  "label": "Milkshake",
+  "swatches": {
+    "base": {
+      "background": "#dddddd",
+      "color": "#000000"
+    },
+    "mods": {
+      "background": "#dddddd",
+      "color": "#000000"
+    },
+    "accent": {
+      "background": "#f49bac",
+      "color": "#ffffff"
+    },
+    "accent2": {
+      "background": "#6ee5d0",
+      "color": "#000000"
+    },
+    "accent3": {
+      "background": "#f7f59a",
+      "color": "#000000"
+    },
+    "accent4": {
+      "background": "#5cceee",
+      "color": "#000000"
+    },
+    "accent5": {
+      "background": "#ba92dc",
+      "color": "#000000"
+    }
+  },
+  "override": {
+    "KC_ESC": "accent",
+    "KC_GESC": "accent",
+    "KC_ENT": "accent2",
+    "KC_BSPC": "accent3",
+    "KC_RCTL": "accent4",
+    "KC_LCTL": "accent4",
+    "KC_RALT": "accent5",
+    "KC_LALT": "accent5"
+  }
+}

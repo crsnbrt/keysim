@@ -1,0 +1,28 @@
+{
+  "id": "taro",
+  "label": "Taro",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#8E71A2",
+      "color": "#170B19"
+    },
+    "mods": {
+      "background": "#170B19",
+      "color": "#8E71A2"
+    },
+    "accent": {
+      "background": "#00a4a9",
+      "color": "#170B19"
+    },
+    "accent2": {
+      "background": "#f8c200",
+      "color": "#170B19"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent2",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

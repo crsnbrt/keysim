@@ -1,0 +1,28 @@
+{
+  "id": "bobafett",
+  "label": "Boba Fett",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#dcdbd5",
+      "color": "#171718"
+    },
+    "mods": {
+      "background": "#798b79",
+      "color": "#171718"
+    },
+    "accent": {
+      "background": "#b85764",
+      "color": "#171718"
+    },
+    "accent2": {
+      "background": "#d3ae2c",
+      "color": "#171718"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent2",
+    "KC_GESC": "accent2"
+  }
+}

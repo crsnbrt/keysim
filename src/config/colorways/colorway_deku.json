@@ -1,0 +1,28 @@
+{
+  "id": "deku",
+  "label": "Deku",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#2a8286",
+      "subColor": "#e5e1de",
+      "color": "#e5e1de"
+    },
+    "mods": {
+      "background": "#e5e1de",
+      "subColor": "#2a8286",
+      "color": "#2a8286"
+    },
+    "accent": {
+      "background": "#b03231",
+      "subColor": "#e5e1de",
+      "color": "#e5e1de"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "sumi",
+  "label": "Sumi",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#191e28",
+      "subColor": "#f7f2ea",
+      "color": "#f7f2ea"
+    },
+    "mods": {
+      "background": "#f7f2ea",
+      "subColor": "#191e28",
+      "color": "#191e28"
+    },
+    "accent": {
+      "background": "#cc2c24",
+      "subColor": "#f7f2ea",
+      "color": "#f7f2ea"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

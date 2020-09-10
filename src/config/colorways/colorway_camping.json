@@ -1,0 +1,24 @@
+{
+  "id": "camping",
+  "label": "Camping",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "rgb(238, 226, 208)",
+      "color": "rgb(91, 124, 91)"
+    },
+    "mods": {
+      "background": "rgb(91, 124, 91)",
+      "color": "rgb(238, 226, 208)"
+    },
+    "accent": {
+      "background": "#733636",
+      "color": "rgb(238, 226, 208)"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

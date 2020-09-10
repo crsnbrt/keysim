@@ -1,0 +1,25 @@
+{
+  "id": "dmg",
+  "label": "DMG",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#c5c7ca",
+      "subColor": "#8b2858",
+      "color": "#240773"
+    },
+    "mods": {
+      "background": "#727474",
+      "color": "#240773"
+    },
+    "accent": {
+      "background": "#8b2858",
+      "color": "#c5c7ca"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

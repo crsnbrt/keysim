@@ -1,0 +1,24 @@
+{
+  "id": "ashes",
+  "label": "Ashes",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#575d64",
+      "color": "#cdd4de"
+    },
+    "mods": {
+      "background": "#cdd4de",
+      "color": "#575d64"
+    },
+    "accent": {
+      "background": "#171718",
+      "color": "#cdd4de"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

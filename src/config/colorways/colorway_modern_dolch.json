@@ -1,0 +1,28 @@
+{
+  "id": "modern_dolch",
+  "label": "Modern Dolch",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#777b7e",
+      "color": "#e7e7e8"
+    },
+    "mods": {
+      "background": "#505356",
+      "color": "#e7e7e8"
+    },
+    "accent": {
+      "background": "#79d1c7",
+      "color": "#e7e7e8"
+    },
+    "accent2": {
+      "background": "#ac5160",
+      "color": "#e7e7e8"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent2",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

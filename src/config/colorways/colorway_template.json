@@ -1,0 +1,25 @@
+{
+  "id": "COLORWAY_NAME",
+  "label": "COLORWAY_LABEL",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#bbbbbb",
+      "color": "#333333"
+    },
+    "mods": {
+      "background": "#666666",
+      "color": "#cccccc"
+    },
+    "accent": {
+      "background": "#49c5b1",
+      "color": "#eeeeee"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

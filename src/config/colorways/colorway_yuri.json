@@ -1,0 +1,24 @@
+{
+  "id": "yuri",
+  "manufacturer": "",
+  "label": "Yuri",
+  "swatches": {
+    "base": {
+      "background": "#b2c4d0",
+      "color": "#ff4a2a"
+    },
+    "mods": {
+      "background": "#323f52",
+      "color": "#ff4a2a"
+    },
+    "accent": {
+      "background": "#ff4a2a",
+      "color": "#323f52"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

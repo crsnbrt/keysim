@@ -1,0 +1,39 @@
+{
+  "id": "skeletor",
+  "label": "Skeletor",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#00a4a9",
+      "color": "#5d437e"
+    },
+    "mods": {
+      "background": "#5d437e",
+      "color": "#00a4a9"
+    },
+    "accent": {
+      "background": "#cb3d6e",
+      "color": "#5d437e"
+    },
+    "accent2": {
+      "background": "#689b34",
+      "color": "#5d437e"
+    },
+    "accent3": {
+      "background": "#f8c200",
+      "color": "#5d437e"
+    }
+  },
+  "override": {
+    "KC_F5": "mods",
+    "KC_F6": "mods",
+    "KC_F7": "mods",
+    "KC_F8": "mods",
+
+    "KC_ENT": "accent3",
+    "KC_PENT": "accent2",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

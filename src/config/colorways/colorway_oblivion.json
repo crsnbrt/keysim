@@ -1,0 +1,66 @@
+{
+  "id": "oblivion",
+  "label": "Oblivion",
+  "manufacturer": "gmk, sa",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#626a6a",
+      "subColor": "#e1dcd0",
+      "color": "#e1dcd0"
+    },
+    "mods": {
+      "background": "#474747",
+      "subColor": "#e1dcd0",
+      "color": "#e1dcd0"
+    },
+    "accent": {
+      "background": "#474747",
+      "subColor": "#ff4222",
+      "color": "#ff4222"
+    },
+    "accent2": {
+      "background": "#474747",
+      "subColor": "#ae98c6",
+      "color": "#ae98c6"
+    },
+    "accent3": {
+      "background": "#474747",
+      "subColor": "#78c33c",
+      "color": "#78c33c"
+    },
+    "accent4": {
+      "background": "#474747",
+      "subColor": "#ffad00",
+      "color": "#ffad00"
+    },
+    "accent5": {
+      "background": "#474747",
+      "subColor": "#028bba",
+      "color": "#028bba"
+    }
+  },
+  "override": {
+    "KC_ESC": "accent",
+    "KC_GESC": "accent",
+
+    "KC_TAB": "accent2",
+    "KC_BSPC": "accent2",
+
+    "KC_ENT": "accent3",
+    "KC_CAPS": "accent3",
+
+    "KC_LSFT": "accent4",
+    "KC_RSFT": "accent4",
+
+    "KC_LCTL": "accent5",
+    "KC_RCTL": "accent5",
+    "KC_RALT": "accent5",
+    "KC_LALT": "accent5",
+    "KC_LGUI": "accent5",
+    "KC_RGUI": "accent5",
+    "KC_MO(1)": "accent5",
+    "KC_MO(2)": "accent5",
+    "KC_MO(3)": "accent5"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hyperfuse",
+  "label": "Hyperfuse",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#c5c7ca",
+      "color": "#5d437e"
+    },
+    "mods": {
+      "background": "#626d6e",
+      "color": "#79c5b0"
+    },
+    "accent": {
+      "background": "#79c5b0",
+      "color": "#5d437e"
+    },
+    "accent2": {
+      "background": "#5d437e",
+      "color": "#79c5b0"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent2",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

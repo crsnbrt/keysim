@@ -1,0 +1,23 @@
+{
+  "id": "nautilus",
+  "label": "Nautilus",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#1B365D",
+      "color": "#00a4a9"
+    },
+    "mods": {
+      "background": "#202A44",
+      "color": "#e5a100"
+    },
+    "accent": {
+      "background": "#e5a100",
+      "color": "#202A44"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "fontFamily": "system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,\"Helvetica Neue\", sans-serif",
+  "fontSizeMultiplier": 1,
+  "chars": {
+    "KC_GRV": "ろ",
+    "KC_1": "ぬ",
+    "KC_2": "ふ",
+    "KC_3": {
+      "top": "ぁ",
+      "bottom": "あ"
+    },
+    "KC_4": {
+      "top": "ぅ",
+      "bottom": "う"
+    },
+    "KC_5": {
+      "top": "ぇ",
+      "bottom": "え"
+    },
+    "KC_6": {
+      "top": "ぉ",
+      "bottom": "お"
+    },
+    "KC_7": {
+      "top": "ゃ",
+      "bottom": "や"
+    },
+    "KC_8": {
+      "top": "ゅ",
+      "bottom": "ゆ"
+    },
+    "KC_9": {
+      "top": "ょ",
+      "bottom": "よ"
+    },
+    "KC_0": {
+      "top": "を",
+      "bottom": "わ"
+    },
+    "KC_MINS": {
+      "top": "ー",
+      "bottom": "ほ"
+    },
+    "KC_E": {
+      "top": "ぃ",
+      "bottom": "い"
+    },
+    "KC_EQL": "へ",
+    "KC_A": "ち",
+    "KC_B": "こ",
+    "KC_C": "そ",
+    "KC_D": "し",
+    "KC_F": "は",
+    "KC_G": "き",
+    "KC_H": "く",
+    "KC_I": "に",
+    "KC_J": "ま",
+    "KC_K": "の",
+    "KC_L": "り",
+    "KC_M": "も",
+    "KC_N": "み",
+    "KC_O": "ら",
+    "KC_P": "せ",
+    "KC_Q": "た",
+    "KC_R": "す",
+    "KC_S": "と",
+    "KC_T": "か",
+    "KC_U": "な",
+    "KC_V": "ひ",
+    "KC_W": "て",
+    "KC_X": "さ",
+    "KC_Y": "ん",
+    "KC_Z": {
+      "top": "っ",
+      "bottom": "つ"
+    },
+    "KC_LBRC": {
+      "top": "「",
+      "bottom": "゛"
+    },
+    "KC_RBRC": {
+      "top": "」",
+      "bottom": "゜"
+    },
+    "KC_BSLS": "む",
+    "KC_SCLN": "れ",
+    "KC_QUOT": "け",
+    "KC_COMM": {
+      "top": "、",
+      "bottom": "ね"
+    },
+    "KC_DOT": {
+      "top": "。",
+      "bottom": "る"
+    },
+    "KC_SLSH": {
+      "top": "・",
+      "bottom": "め"
+    }
+  }
+}

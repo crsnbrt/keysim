@@ -1,0 +1,29 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.section {
+  padding: $section-padding $sidebar-padding;
+
+  header {
+    @include smallcaps();
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    color: var(--accent);
+    justify-content: space-between;
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+  header + * {
+    margin-top: $section-padding;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  + section {
+    border-top: 1px solid $color-light-15;
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "1976",
+  "label": "1976",
+  "manufacturer": "sa",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#6a3c1a",
+      "color": "#5dceba"
+    },
+    "mods": {
+      "background": "#6a3c1a",
+
+      "color": "#5dceba"
+    },
+    "accent": {
+      "background": "#e66701",
+      "color": "#ffffff"
+    },
+    "accent2": {
+      "background": "#da3510",
+      "color": "#ffffff"
+    },
+    "accent3": {
+      "background": "#5dceba",
+      "color": "#6a3c1a"
+    },
+    "accent4": {
+      "background": "#e1ba43",
+      "color": "#6a3c1a"
+    }
+  },
+  "override": {
+    "KC_C": "accent4",
+    "KC_F": "accent4",
+    "KC_T": "accent4",
+    "KC_6": "accent4",
+    "KC_F5": "accent4",
+    "KC_R": "accent",
+    "KC_D": "accent",
+    "KC_X": "accent",
+    "KC_5": "accent",
+    "KC_LALT": "accent",
+    "KC_Z": "accent2",
+    "KC_S": "accent2",
+    "KC_E": "accent2",
+    "KC_4": "accent2",
+    "KC_F4": "accent2",
+    "KC_LGUI": "accent2",
+    "KC_LCTL": "accent3",
+    "KC_ESC": "accent3",
+    "KC_LSFT": "accent3",
+    "KC_TAB": "accent3",
+    "KC_CAPS": "accent3",
+    "KC_Q": "accent3",
+    "KC_A": "accent3",
+    "KC_W": "accent3",
+    "KC_1": "accent3",
+    "KC_2": "accent3",
+    "KC_3": "accent3",
+    "KC_F1": "accent3",
+    "KC_F2": "accent3",
+    "KC_F3": "accent3",
+    "KC_GRV": "accent3",
+    "KC_NUBS": "accent3",
+    "KC_GESC": "accent3"
+  }
+}

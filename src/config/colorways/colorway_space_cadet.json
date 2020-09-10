@@ -1,0 +1,24 @@
+{
+  "id": "space_cadet",
+  "label": "Space Cadet",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#63696a",
+      "color": "#faf7f0"
+    },
+    "mods": {
+      "background": "#0073a2",
+      "color": "#faf7f0"
+    },
+    "accent": {
+      "background": "#0073a2",
+      "color": "#faf7f0"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

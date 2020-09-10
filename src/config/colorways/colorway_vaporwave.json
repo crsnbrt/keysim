@@ -1,0 +1,25 @@
+{
+  "id": "vaporwave",
+  "label": "Vaporwave",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#9595D2",
+      "subColor": "#6244BB",
+      "color": "#FF3EB5"
+    },
+    "mods": {
+      "background": "#6244BB",
+      "color": "#00BCE3"
+    },
+    "accent": {
+      "background": "#00BCE3",
+      "color": "#6244BB"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

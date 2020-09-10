@@ -1,0 +1,52 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.pane {
+  margin: 0;
+  flex-direction: column;
+  display: flex;
+}
+
+.editor {
+  flex-grow: 1;
+  max-height: 50vw;
+  > div {
+    padding: $sidebar-padding;
+    background: var(--light-1);
+    border-radius: $primary-border-radius;
+    border: 1px solid transparent;
+    overflow-y: scroll;
+    min-height: 15vh;
+    max-height: 25vw;
+    &:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-transparent);
+    }
+  }
+}
+
+.wpmContainer {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h3 {
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    margin: 0;
+  }
+}
+
+.wpmNumber {
+  margin-left: 1rem;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.words {
+  textarea {
+    font-family: "Inter var", sans-serif !important;
+    font-size: 1.2rem !important;
+  }
+}

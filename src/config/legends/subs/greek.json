@@ -1,0 +1,32 @@
+{
+  "fontFamily": "system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif",
+  "fontSizeMultiplier": 1.3,
+  "chars": {
+    "KC_A": "α",
+    "KC_B": "β",
+    "KC_C": "ψ",
+    "KC_D": "δ",
+    "KC_E": "ε",
+    "KC_F": "φ",
+    "KC_G": "γ",
+    "KC_H": "η",
+    "KC_I": "ι",
+    "KC_J": "ξ",
+    "KC_K": "κ",
+    "KC_L": "λ",
+    "KC_M": "μ",
+    "KC_N": "ν",
+    "KC_O": "ο",
+    "KC_P": "π",
+    "KC_Q": ";",
+    "KC_R": "ρ",
+    "KC_S": "σ",
+    "KC_T": "τ",
+    "KC_U": "θ",
+    "KC_V": "ω",
+    "KC_W": "ς",
+    "KC_X": "χ",
+    "KC_Y": "υ",
+    "KC_Z": "ζ"
+  }
+}

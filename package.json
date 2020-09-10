@@ -1,0 +1,90 @@
+{
+    "name": "keysim",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.4.0",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.0.2",
+        "@testing-library/user-event": "^12.1.4",
+        "aws-amplify": "^3.1.1",
+        "aws-amplify-react": "^4.2.2",
+        "color-convert": "^2.0.1",
+        "dotenv": "^8.2.0",
+        "esm": "^3.2.25",
+        "howler": "^2.2.0",
+        "husky": "^4.3.0",
+        "lint-staged": "^10.3.0",
+        "lodash": "^4.17.20",
+        "lodash-es": "^4.17.15",
+        "node-sass": "^4.14.1",
+        "query-string": "^6.13.1",
+        "react": "^16.13.1",
+        "react-color": "^2.18.1",
+        "react-dom": "^16.13.1",
+        "react-draggable": "^4.4.3",
+        "react-redux": "^7.2.1",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "^3.4.3",
+        "react-tabs": "^3.1.1",
+        "react-toggle": "^4.1.1",
+        "redux-subscriber": "^1.1.0",
+        "three": "^0.120.1",
+        "webfontloader": "^1.6.28",
+        "wpmtest": "^1.3.9"
+    },
+    "homepage": "./",
+    "main": "src/electron/main.js",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "create-colorway": "cd src/tools && bash ./createColorway.sh",
+        "electron-dev": "electron .",
+        "resize-images": "python ./src/tools/resizeImages.py",
+        "compress-images": "node ./src/tools/compressImages.js",
+        "generate-shadows": "node -r esm ./src/tools/generateShadows.js",
+        "clean-svgs": "svgo -f ./src/assets/legends/cherry_raw -o ./src/assets/legends/cherry_cleaned && node ./src/assets/legends/convertStrokes.js"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+            "prettier --write"
+        ]
+    },
+    "devDependencies": {
+        "canvas": "^2.6.1",
+        "electron": "^10.1.1",
+        "eslint-plugin-jsx-a11y": "^6.3.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "imagemin": "^7.0.1",
+        "imagemin-mozjpeg": "^9.0.0",
+        "imagemin-optipng": "^8.0.0",
+        "oslllo-svg-fixer": "^0.6.0",
+        "prettier": "^2.1.1",
+        "react-axe": "^3.5.3",
+        "stackblur-canvas": "^2.4.0",
+        "svgo": "^1.3.2",
+        "workerize-loader": "^1.3.0"
+    }
+}

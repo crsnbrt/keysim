@@ -1,0 +1,25 @@
+{
+  "id": "jamon",
+  "label": "Jamon",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#84172c",
+      "color": "#ece4d1"
+    },
+    "mods": {
+      "background": "#ab2e34",
+      "color": "#ece4d1"
+    },
+    "accent": {
+      "background": "#ece4d1",
+      "color": "#84172c"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

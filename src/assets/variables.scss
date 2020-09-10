@@ -1,0 +1,32 @@
+//spacing / pading
+$sidebar-width: 20em;
+$sidebar-padding: 1em;
+$scrollbar-width: 1em;
+$control-width: 5em;
+$section-padding: 1.5rem;
+
+//screen
+$h: 675px;
+$w: 1200px;
+$bezel: 12px;
+$base: #f1eadc;
+$accent: #f1eadc;
+$secondary: #f1eadc;
+$border-width: 2px;
+
+$primary-field-height: 40px;
+$primary-border-radius: 5px;
+
+$color-accent: #614dff;
+$color-main: #202024;
+$break: 900px;
+
+$color-light-1: lighten($color-main, 10%);
+$color-light-15: lighten($color-main, 20%);
+$color-light-2: lighten($color-main, 50%);
+$color-light-3: lighten($color-main, 75%);
+$color-light-4: lighten($color-main, 80%);
+
+$color-dark-1: darken($color-main, 7%);
+$color-dark-2: darken($color-main, 25%);
+$color-dark-3: darken($color-main, 30%);

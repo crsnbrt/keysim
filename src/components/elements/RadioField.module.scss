@@ -1,0 +1,70 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.radioField {
+  @include field();
+  margin-bottom: 1em;
+  legend {
+    font-size: 14px;
+    color: var(--light-3);
+    margin-bottom: 0.5em;
+    display: block;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+  input:checked + label span {
+    color: white;
+  }
+  input:focus + label span {
+    text-decoration: underline;
+    color: var(--accent);
+  }
+  input:checked + label span:before {
+    border-color: var(--accent);
+  }
+  input:checked + label span:after {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+}
+.radioList {
+  display: flex;
+  align-items: center;
+}
+.radioItem {
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: $primary-border-radius;
+  margin-right: 1em;
+  max-width: 45%;
+  span {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  span:after,
+  span:before {
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+  span:before {
+    border: 2px solid var(--light-2);
+  }
+  span:after {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: scale(0.2);
+    background: var(--accent);
+  }
+}

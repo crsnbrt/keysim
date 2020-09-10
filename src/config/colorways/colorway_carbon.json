@@ -1,0 +1,24 @@
+{
+  "id": "carbon",
+  "label": "Carbon",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#e3d9c6",
+      "color": "#575d5e"
+    },
+    "mods": {
+      "background": "#575d5e",
+      "color": "#ed6b21"
+    },
+    "accent": {
+      "background": "#ed6b21",
+      "color": "#575d5e"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

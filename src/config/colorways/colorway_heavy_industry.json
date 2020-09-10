@@ -1,0 +1,33 @@
+{
+  "id": "heavy_industry",
+  "label": "Heavy Industry",
+  "manufacturer": "Rama",
+  "swatches": {
+    "base": {
+      "background": "#eeeeee",
+      "color": "#180d00"
+    },
+    "mods": {
+      "background": "#c6c9d1",
+      "color": "#180d00"
+    },
+    "accent": {
+      "background": "#ddaf10",
+      "color": "#180d00"
+    }
+  },
+  "override": {
+    "KC_LEFT": "accent",
+    "KC_RGHT": "accent",
+    "KC_UP": "accent",
+    "KC_DOWN": "accent",
+    "KC_LGUI": "accent",
+    "KC_PAUS": "accent",
+    "KC_SLCK": "accent",
+    "KC_PSCR": "accent",
+
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

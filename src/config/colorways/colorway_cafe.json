@@ -1,0 +1,25 @@
+{
+  "id": "cafe",
+  "label": "Cafe",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#cfcec4",
+      "color": "#3c3636"
+    },
+    "mods": {
+      "background": "#3c3636",
+      "color": "#cfcec4"
+    },
+    "accent": {
+      "background": "#d0b084",
+      "color": "#3c3636"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

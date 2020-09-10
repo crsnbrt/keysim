@@ -1,0 +1,24 @@
+{
+  "id": "blue_samurai",
+  "label": "Blue Samurai",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#002f58",
+      "color": "#B9975B"
+    },
+    "mods": {
+      "background": "#25282A",
+      "color": "#B9975B"
+    },
+    "accent": {
+      "background": "#B9975B",
+      "color": "#002f58"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "metropolis",
+  "label": "Metropolis",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#302d36",
+      "color": "#40d3b9"
+    },
+    "mods": {
+      "background": "#302d36",
+      "color": "#fbc757"
+    },
+    "accent": {
+      "background": "#302d36",
+      "color": "#d54039"
+    },
+    "accent2": {
+      "background": "#fbc757",
+      "color": "#302d36"
+    },
+    "accent3": {
+      "background": "#d54039",
+      "color": "#302d36"
+    },
+    "accent4": {
+      "background": "#40d3b9",
+      "color": "#302d36"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent4",
+    "KC_ESC": "accent2",
+    "KC_GESC": "accent2",
+    "KC_LEFT": "accent3",
+    "KC_RGHT": "accent3",
+    "KC_UP": "accent3",
+    "KC_DOWN": "accent3",
+    "KC_LSFT": "accent",
+    "KC_LCTL": "accent",
+    "KC_RCTL": "accent",
+    "KC_LALT": "accent",
+    "KC_RALT": "accent",
+    "KC_RGUI": "accent",
+    "KC_LGUI": "accent",
+    "MO(1)": "accent",
+    "MO(2)": "accent",
+    "KC_RSFT": "accent"
+  }
+}

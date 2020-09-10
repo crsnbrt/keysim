@@ -1,0 +1,101 @@
+{
+  "fontFamily": "system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,\"Helvetica Neue\", sans-serif",
+  "fontSizeMultiplier": 1,
+  "chars": {
+    "KC_GRV": "ロ",
+    "KC_1": "ヌ",
+    "KC_2": "フ",
+    "KC_3": {
+      "top": "ァ",
+      "bottom": "ア"
+    },
+    "KC_4": {
+      "top": "ゥ",
+      "bottom": "ウ"
+    },
+    "KC_5": {
+      "top": "ェ",
+      "bottom": "エ"
+    },
+    "KC_6": {
+      "top": "ォ",
+      "bottom": "オ"
+    },
+    "KC_7": {
+      "top": "ャ",
+      "bottom": "ヤ"
+    },
+    "KC_8": {
+      "top": "ュ",
+      "bottom": "ユ"
+    },
+    "KC_9": {
+      "top": "ョ",
+      "bottom": "ヨ"
+    },
+    "KC_0": {
+      "top": "ヲ",
+      "bottom": "ワ"
+    },
+    "KC_MINS": {
+      "top": "ー",
+      "bottom": "ホ"
+    },
+    "KC_E": {
+      "top": "ィ",
+      "bottom": "イ"
+    },
+    "KC_EQL": "ヘ",
+    "KC_A": "チ",
+    "KC_B": "コ",
+    "KC_C": "ソ",
+    "KC_D": "シ",
+    "KC_F": "ハ",
+    "KC_G": "キ",
+    "KC_H": "ク",
+    "KC_I": "ニ",
+    "KC_J": "マ",
+    "KC_K": "ノ",
+    "KC_L": "リ",
+    "KC_M": "モ",
+    "KC_N": "ミ",
+    "KC_O": "ラ",
+    "KC_P": "セ",
+    "KC_Q": "タ",
+    "KC_R": "ス",
+    "KC_S": "ト",
+    "KC_T": "カ",
+    "KC_U": "ナ",
+    "KC_V": "ヒ",
+    "KC_W": "テ",
+    "KC_X": "サ",
+    "KC_Y": "ン",
+    "KC_Z": {
+      "top": "ﾂ",
+      "bottom": "ツ"
+    },
+    "KC_LBRC": {
+      "top": "「",
+      "bottom": "゛"
+    },
+    "KC_RBRC": {
+      "top": "」",
+      "bottom": "゜"
+    },
+    "KC_BSLS": "ム",
+    "KC_SCLN": "レ",
+    "KC_QUOT": "ケ",
+    "KC_COMM": {
+      "top": "、",
+      "bottom": "ネ"
+    },
+    "KC_DOT": {
+      "top": "。",
+      "bottom": "ル"
+    },
+    "KC_SLSH": {
+      "top": "・",
+      "bottom": "メ"
+    }
+  }
+}

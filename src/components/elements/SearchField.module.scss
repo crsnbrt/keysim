@@ -1,0 +1,21 @@
+@import "../../assets/variables";
+
+.search {
+  width: 100%;
+  position: relative;
+  height: $primary-field-height;
+  margin-right: 1em;
+  input {
+    height: 100%;
+    padding: 0 1em !important;
+  }
+  svg {
+    top: 50%;
+    width: 20px;
+    right: 0.75em;
+    cursor: pointer;
+    margin-left: 1em;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+}

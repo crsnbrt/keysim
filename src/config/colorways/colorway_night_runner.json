@@ -1,0 +1,24 @@
+{
+  "id": "night_runner",
+  "label": "Night Runner",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#27282d",
+      "color": "#fcff04"
+    },
+    "mods": {
+      "background": "#3a395f",
+      "color": "#fcff04"
+    },
+    "accent": {
+      "background": "#fcff04",
+      "color": "#27282d"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

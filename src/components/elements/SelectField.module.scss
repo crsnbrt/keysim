@@ -1,0 +1,127 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.field {
+  label {
+    color: var(--light-3);
+    display: block;
+  }
+}
+
+.select {
+  position: relative;
+  margin-bottom: 1em;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  min-width: 10em;
+  flex: 2;
+  span {
+    pointer-events: none;
+  }
+  &:focus {
+    > div {
+      border-color: var(--accent);
+    }
+    .selected {
+      text-decoration: underline;
+    }
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  padding: 0 0 0 1em;
+  height: 40px;
+
+  img {
+    object-fit: contain;
+    opacity: 0.5;
+  }
+}
+
+.selected {
+  overflow: hidden;
+  background: var(--light-1);
+  border-radius: $primary-border-radius;
+  min-width: 6em;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: $primary-field-height;
+  border: 3px solid transparent;
+
+  span {
+    padding: 0.5em 1em;
+    flex-grow: 1;
+  }
+  svg {
+    width: 1em;
+    margin-right: 0.5em;
+  }
+}
+
+.selectedOpen {
+  @extend .selected;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: var(--accent);
+  border-bottom-color: transparent !important;
+}
+
+.secondary {
+  padding: 0 !important;
+}
+.options {
+  border: 3px solid var(--accent);
+  border-radius: $primary-border-radius;
+  background: var(--light-1);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top: none;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  min-width: 150px;
+  width: 100%;
+  z-index: 10;
+  top: calc(100% - 3px);
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  height: $primary-field-height;
+  transition: all 0.1s;
+  &:focus,
+  &:hover {
+    background: var(--accent-transparent);
+  }
+  &:focus {
+    text-decoration: underline;
+  }
+  span {
+    flex-grow: 1;
+    padding: 0.5em 1em;
+  }
+  svg {
+    width: 20px;
+    margin-right: 0.5em;
+  }
+}
+
+.optionSelected {
+  @extend .option;
+
+  background: var(--accent);
+  color: var(--accent-text);
+  &:hover {
+    background: var(--accent);
+  }
+}

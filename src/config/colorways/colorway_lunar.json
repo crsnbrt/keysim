@@ -1,0 +1,30 @@
+{
+  "id": "lunar",
+  "label": "Lunar",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#727474",
+      "color": "#c6c9c7"
+    },
+    "mods": {
+      "background": "#393b3b",
+      "color": "#c6c9c7"
+    },
+    "accent": {
+      "background": "#e5a100",
+      "color": "#393b3b"
+    },
+    "accent2": {
+      "background": "#dd1126",
+      "color": "#c6c9c7"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent",
+    "KC_PENT": "accent2"
+  }
+}

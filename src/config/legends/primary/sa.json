@@ -1,0 +1,199 @@
+{
+  "id": "sa",
+  "fontFamily": "Varela Round",
+  "subsSupported": false,
+  "centered": true,
+  "encoded": false,
+  "offsetX": 26,
+  "offsetY": 12,
+  "fontsize": 60,
+  "chars": {
+    "KC_0": {
+      "top": ")",
+      "bottom": "0"
+    },
+    "KC_1": {
+      "top": "!",
+      "bottom": "1"
+    },
+    "KC_2": {
+      "top": "@",
+      "bottom": "2"
+    },
+    "KC_3": {
+      "top": "#",
+      "bottom": "3"
+    },
+    "KC_4": {
+      "top": "$",
+      "bottom": "4"
+    },
+    "KC_5": {
+      "top": "%",
+      "bottom": "5"
+    },
+    "KC_6": {
+      "top": "^",
+      "bottom": "6"
+    },
+    "KC_7": {
+      "top": "&",
+      "bottom": "7"
+    },
+    "KC_8": {
+      "top": "*",
+      "bottom": "8"
+    },
+    "KC_9": {
+      "top": "(",
+      "bottom": "9"
+    },
+    "KC_Q": "Q",
+    "KC_W": "W",
+    "KC_E": "E",
+    "KC_R": "R",
+    "KC_T": "T",
+    "KC_Y": "Y",
+    "KC_U": "U",
+    "KC_I": "I",
+    "KC_O": "O",
+    "KC_P": "P",
+    "KC_A": "A",
+    "KC_S": "S",
+    "KC_D": "D",
+    "KC_F": "F",
+    "KC_G": "G",
+    "KC_H": "H",
+    "KC_J": "J",
+    "KC_K": "K",
+    "KC_L": "L",
+    "KC_Z": "Z",
+    "KC_X": "X",
+    "KC_C": "C",
+    "KC_V": "V",
+    "KC_B": "B",
+    "KC_N": "N",
+    "KC_M": "M",
+    "KC_F1": "F1",
+    "KC_F2": "F2",
+    "KC_F3": "F3",
+    "KC_F4": "F4",
+    "KC_F5": "F5",
+    "KC_F6": "F6",
+    "KC_F7": "F7",
+    "KC_F8": "F8",
+    "KC_F9": "F9",
+    "KC_F10": "F10",
+    "KC_F11": "F11",
+    "KC_F12": "F12",
+    "KC_ESC": "ESC",
+    "KC_GESC": "ESC",
+    "KC_GRV": {
+      "top": "~",
+      "bottom": "`"
+    },
+    "KC_MINS": {
+      "top": "_",
+      "bottom": "-"
+    },
+    "KC_EQL": {
+      "top": "+",
+      "bottom": "="
+    },
+    "KC_BSPC": "BACKSPACE",
+    "KC_TAB": "TAB",
+    "KC_LBRC": {
+      "top": "{",
+      "bottom": "["
+    },
+    "KC_RBRC": {
+      "top": "}",
+      "bottom": "]"
+    },
+    "KC_BSLS": {
+      "top": "|",
+      "bottom": "\\"
+    },
+    "KC_CAPS": "CAPS",
+    "KC_SCLN": {
+      "top": ":",
+      "bottom": ";"
+    },
+    "KC_QUOT": {
+      "top": "\"",
+      "bottom": "'"
+    },
+    "KC_ENT": "ENTER",
+    "KC_LSFT": "SHIFT",
+    "KC_COMM": {
+      "top": "<",
+      "bottom": ","
+    },
+    "KC_DOT": {
+      "top": ">",
+      "bottom": "."
+    },
+    "KC_SLSH": {
+      "top": "?",
+      "bottom": "/"
+    },
+    "KC_RSFT": "SHIFT",
+    "KC_LCTL": "CTRL",
+    "KC_LGUI": "SUPER",
+    "KC_LALT": "ALT",
+    "KC_RALT": "ALT",
+    "KC_RGUI": "SUPER",
+    "KC_RCTL": "CTRL",
+    "KC_LEFT": "LEFT",
+    "KC_DOWN": "DOWN",
+    "KC_RGHT": "RIGHT",
+    "KC_UP": "UP",
+    "KC_PSCR": "PRTSCR",
+    "KC_SLCK": "SCLK",
+    "KC_PAUS": "PAUSE",
+    "KC_INS": "INSERT",
+    "KC_HOME": "HOME",
+    "KC_PGUP": "PGUP",
+    "KC_DEL": "DELETE",
+    "KC_END": "END",
+    "KC_PGDN": "PGDN",
+    "KC_P7": "7",
+    "KC_P8": "8",
+    "KC_P9": "9",
+    "KC_P4": "4",
+    "KC_P5": "5",
+    "KC_P6": "6",
+    "KC_P1": "1",
+    "KC_P2": "2",
+    "KC_P3": "3",
+    "KC_P0": "0",
+    "KC_PMNS": "-",
+    "KC_PENT": "ENTER",
+    "KC_PSLS": "/",
+    "KC_PAST": "*",
+    "KC_PPLS": "+",
+    "KC_NLCK": "NUM",
+    "KC_PDOT": ".",
+    "KC_PEQL": "=",
+    "KC_NUBS": {
+      "top": "|",
+      "bottom": "\\"
+    },
+    "MO(1)": "FN",
+    "MO(2)": "FN",
+    "MO(3)": "FN",
+    "MO(4)": "FN",
+    "KC_APP": "MENU",
+    "KC_BSISO": "BACK",
+    "KC_ENISO": "ENTER",
+    "KC_PIPEISO": "",
+    "KC_QUOTISO": "",
+    "KC_2ISO": "",
+    "KC_3ISO": "",
+    "KC_TILDAISO": "",
+    "KC_NUHS": {
+      "top": "~",
+      "bottom": "#"
+    }
+  }
+}

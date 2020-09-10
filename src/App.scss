@@ -1,0 +1,135 @@
+@import "./assets/variables";
+@import "./assets/mixins";
+
+.App {
+  font-family: "Inter var", sans-serif;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-color: var(--main);
+  color: var(--light-3);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-top: 0;
+  }
+  a {
+    color: var(--accent);
+    &:focus,
+    &:hover {
+      color: white;
+    }
+  }
+  svg {
+    min-width: 20px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    transition: all 0.1s;
+  }
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+  }
+  textarea,
+  input[type="text"],
+  input[type="search"] {
+    background: var(--light-1);
+    color: var(--light-3);
+    padding: 0.75em 1em;
+    font-size: 18px;
+    margin-bottom: 0;
+    min-width: 6em;
+    display: flex;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: $primary-border-radius;
+    &:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-transparent);
+    }
+  }
+  input[type="search"] {
+    -webkit-appearance: textfield;
+  }
+  fieldset {
+    padding: 0;
+    border: none;
+  }
+  textarea {
+    resize: none;
+    height: 180px;
+    font-size: 14px;
+    margin-top: 1em;
+    scrollbar-color: $color-dark-1 var(--light-1);
+  }
+  ::-webkit-scrollbar,
+  &::-webkit-scrollbar {
+    width: $scrollbar-width / 2;
+    overflow: hidden;
+  }
+  ::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0.5em;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  ::selection {
+    color: white;
+    background: black;
+  }
+  ::placeholder {
+    color: var(--light-2);
+  }
+
+  //three webgl renderer
+  canvas {
+    height: 100%;
+    width: 100%;
+  }
+  #canvas-wrapper {
+    margin-left: $sidebar-width;
+    width: calc(100% - #{$sidebar-width});
+    height: 100%;
+    z-index: 1;
+    cursor: grab;
+    background-color: var(--main);
+    background-color: var(--accent);
+    &:active {
+      cursor: grabbing;
+    }
+  }
+  > div {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  @media (max-width: $break) {
+    flex-direction: column;
+    overflow: initial;
+    display: flex;
+    #canvas-wrapper {
+      order: -1;
+      width: 100%;
+      height: 300px;
+      margin-left: 0;
+    }
+    > div {
+      position: relative;
+    }
+    #permalink {
+      display: none !important;
+    }
+  }
+}

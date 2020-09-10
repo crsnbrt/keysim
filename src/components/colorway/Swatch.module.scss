@@ -1,0 +1,50 @@
+@import "../../assets/variables";
+
+.swatch {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  border-radius: $primary-border-radius;
+  border: 1px solid transparent;
+  background: var(--light-1);
+  overflow: hidden;
+  label {
+    margin: 0;
+    font-size: 16px;
+    color: var(--light-3);
+    text-transform: capitalize;
+  }
+  button {
+    padding-bottom: 0 !important;
+  }
+}
+
+.swatch:focus,
+.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-transparent);
+}
+.swatch:focus {
+  text-decoration: underline;
+}
+
+.colors {
+  display: flex;
+}
+
+.color {
+  padding: 0;
+}
+
+.info {
+  label {
+    font-weight: 600;
+    margin: 0 !important;
+    font-size: 16px !important;
+  }
+  padding: 0 0.75em;
+  display: flex;
+  flex-direction: column;
+}

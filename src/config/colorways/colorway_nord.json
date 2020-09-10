@@ -1,0 +1,62 @@
+{
+  "id": "nord",
+  "label": "Nord",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#445163",
+      "color": "#889fb0"
+    },
+    "mods": {
+      "background": "#2b303e",
+      "color": "#889fb0"
+    },
+    "accent": {
+      "background": "#2b303e",
+      "color": "#71b5d1"
+    },
+    "accent2": {
+      "background": "#2b303e",
+      "color": "#b1575f"
+    },
+    "accent3": {
+      "background": "#2b303e",
+      "color": "#e1c38b"
+    },
+    "accent4": {
+      "background": "#2b303e",
+      "color": "#77997d"
+    },
+    "accent5": {
+      "background": "#2b303e",
+      "color": "#aa83a4"
+    }
+  },
+  "override": {
+    "KC_ESC": "mods",
+    "KC_GESC": "mods",
+    "KC_F8": "mods",
+    "KC_F5": "mods",
+    "KC_F6": "mods",
+    "KC_F7": "mods",
+
+    "KC_LSHFT": "accent",
+    "KC_RSHFT": "accent",
+
+    "KC_CAPS": "accent2",
+    "KC_ENT": "accent2",
+    "KC_PENT": "accent2",
+    "KC_LGUI": "accent2",
+    "KC_RGUI": "accent2",
+
+    "KC_TAB": "accent3",
+    "KC_RALT": "accent3",
+
+    "KC_RCTL": "accent4",
+    "KC_LCTL": "accent4",
+
+    "KC_LALT": "accent5",
+    "KC_BSPC": "accent5"
+  }
+}

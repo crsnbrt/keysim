@@ -1,0 +1,46 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.placeholder {
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 0.25em;
+  border: 2px dashed rgba(white, 0.3);
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.listLabel {
+  @include smallcaps();
+  width: 100%;
+  padding: 0.75em 0;
+  color: var(--light-2);
+  justify-content: center;
+  position: relative;
+  display: flex;
+  span {
+    background: var(--main);
+    position: relative;
+    padding: 0 10px;
+    z-index: 1;
+  }
+  &:after {
+    content: "";
+    display: block;
+    top: calc(50% - 1px);
+    background: $color-light-15;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+  }
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

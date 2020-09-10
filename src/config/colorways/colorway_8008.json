@@ -1,0 +1,24 @@
+{
+  "id": "8008",
+  "label": "8008",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#9aa5b6",
+      "color": "#393b3b"
+    },
+    "mods": {
+      "background": "#393b3b",
+      "color": "#fe5a90"
+    },
+    "accent": {
+      "background": "#fe5a90",
+      "color": "#393b3b"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "nautilus_nightmares",
+  "label": "Nautilus Nightmares",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#026f5c",
+      "color": "#19a08b"
+    },
+    "mods": {
+      "background": "#034e43",
+      "color": "#19a08b"
+    },
+    "accent": {
+      "background": "#333333",
+      "color": "#19a08b"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "miami",
+  "label": "Miami",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#00a4a9",
+      "color": "#cb3d6e"
+    },
+    "mods": {
+      "background": "#cb3d6e",
+      "color": "#00a4a9"
+    },
+    "accent": {
+      "background": "#ebd400",
+      "color": "#cb3d6e"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

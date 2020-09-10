@@ -1,0 +1,85 @@
+{
+  "id": "bushido",
+  "label": "Bushidō",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#404a56",
+      "color": "#cccccc"
+    },
+    "mods": {
+      "background": "#404a56",
+      "color": "#e64c55"
+    },
+    "accent": {
+      "background": "#e64c55",
+      "color": "#eeeeee"
+    },
+    "accent2": {
+      "background": "#cccccc",
+      "color": "#404a56"
+    }
+  },
+  "override": {
+    "KC_TAB": "base",
+    "KC_BSPC": "base",
+    "KC_HOME": "base",
+    "KC_END": "base",
+    "KC_PGUP": "base",
+    "KC_PGDN": "base",
+    "KC_DEL": "base",
+    "KC_INS": "base",
+    "KC_PSCR": "base",
+    "KC_SLCK": "base",
+    "KC_PAUS": "base",
+    "KC_NLCK": "base",
+    "KC_PSLS": "base",
+    "KC_PAST": "base",
+    "KC_PMNS": "base",
+    "KC_PPLS": "base",
+
+    "KC_A": "mods",
+    "KC_S": "mods",
+    "KC_D": "mods",
+    "KC_F": "mods",
+    "KC_G": "mods",
+    "KC_H": "mods",
+    "KC_J": "mods",
+    "KC_K": "mods",
+    "KC_L": "mods",
+    "KC_NUHS": "mods",
+    "KC_NUBS": "mods",
+    "KC_SLSH": "mods",
+    "KC_SCLN": "mods",
+    "KC_QUOT": "mods",
+    "KC_Z": "mods",
+    "KC_X": "mods",
+    "KC_C": "mods",
+    "KC_V": "mods",
+    "KC_B": "mods",
+    "KC_N": "mods",
+    "KC_M": "mods",
+    "KC_DOT": "mods",
+    "KC_COMM": "mods",
+    "KC_SLS": "mods",
+    "KC_P0": "mods",
+    "KC_P1": "mods",
+    "KC_P2": "mods",
+    "KC_P3": "mods",
+    "KC_P4": "mods",
+    "KC_P5": "mods",
+    "KC_P6": "mods",
+    "KC_PDOT": "mods",
+
+    "KC_LALT": "accent",
+    "KC_RALT": "accent",
+    "KC_LEFT": "accent",
+    "KC_RGHT": "accent",
+    "KC_UP": "accent",
+    "KC_DOWN": "accent",
+
+    "KC_ESC": "accent2",
+    "KC_GESC": "accent2"
+  }
+}

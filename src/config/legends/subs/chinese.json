@@ -1,0 +1,32 @@
+{
+  "fontFamily": "system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,\"Helvetica Neue\", sans-serif",
+  "fontSizeMultiplier": 1,
+  "chars": {
+    "KC_A": "日",
+    "KC_B": "女",
+    "KC_C": "金",
+    "KC_D": "木",
+    "KC_E": "水",
+    "KC_F": "火",
+    "KC_G": "土",
+    "KC_H": "竹",
+    "KC_I": "戈",
+    "KC_J": "十",
+    "KC_K": "大",
+    "KC_L": "中",
+    "KC_M": "一",
+    "KC_N": "弓",
+    "KC_O": "人",
+    "KC_P": "心",
+    "KC_Q": "手",
+    "KC_R": "口",
+    "KC_S": "尸",
+    "KC_T": "廿",
+    "KC_U": "山",
+    "KC_V": "女",
+    "KC_W": "田",
+    "KC_X": "難",
+    "KC_Y": "卜",
+    "KC_Z": "Ｚ"
+  }
+}

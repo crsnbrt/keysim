@@ -1,0 +1,24 @@
+{
+  "id": "laser",
+  "label": "Laser",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#311c7a",
+      "color": "#29a3d1"
+    },
+    "mods": {
+      "background": "#28234c",
+      "color": "#ce0244"
+    },
+    "accent": {
+      "background": "#ce0244",
+      "color": "#28234c"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

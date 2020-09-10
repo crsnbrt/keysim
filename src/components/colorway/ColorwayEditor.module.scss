@@ -1,0 +1,31 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.editor {
+  legend,
+  label {
+    color: var(--light-3);
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  legend {
+    padding-top: 1.5rem;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.colors {
+  display: flex;
+}
+
+.description {
+  font-size: 14px;
+  margin: 0.5rem 0 1rem 0;
+  color: var(--light-2);
+}

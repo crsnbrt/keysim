@@ -1,0 +1,158 @@
+{
+  "fontFamily": "\"Shree Devanagari 714\",system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif",
+  "fontSizeMultiplier": 1.2,
+  "chars": {
+    "KC_GRV": {
+      "top": "ऒ",
+      "bottom": "ॊ"
+    },
+    "KC_1": {
+      "top": "ऍ",
+      "bottom": ""
+    },
+    "KC_2": {
+      "top": " ॅ",
+      "bottom": ""
+    },
+    "KC_EQL": {
+      "top": "ऋ",
+      "bottom": "ृ"
+    },
+    "KC_A": {
+      "top": "ओ",
+      "bottom": "ो"
+    },
+    "KC_B": {
+      "top": "ऴ",
+      "bottom": "व"
+    },
+    "KC_C": {
+      "top": "ण",
+      "bottom": "म"
+    },
+    "KC_D": {
+      "top": "अ",
+      "bottom": "्"
+    },
+    "KC_E": {
+      "top": "आ",
+      "bottom": "ा"
+    },
+    "KC_F": {
+      "top": "इ",
+      "bottom": "ि"
+    },
+    "KC_G": {
+      "top": "उ",
+      "bottom": "ु"
+    },
+    "KC_H": {
+      "top": "फ",
+      "bottom": "प"
+    },
+    "KC_I": {
+      "top": "घ",
+      "bottom": "ग"
+    },
+    "KC_J": {
+      "top": "ऱ",
+      "bottom": "र"
+    },
+    "KC_K": {
+      "top": "ख",
+      "bottom": "क"
+    },
+    "KC_L": {
+      "top": "थ",
+      "bottom": "त"
+    },
+    "KC_M": {
+      "top": "श",
+      "bottom": "स"
+    },
+    "KC_N": {
+      "top": "ळ",
+      "bottom": "ल"
+    },
+    "KC_O": {
+      "top": "ध",
+      "bottom": "द"
+    },
+    "KC_P": {
+      "top": "झ",
+      "bottom": "ज"
+    },
+    "KC_Q": {
+      "top": "औ",
+      "bottom": "ौ"
+    },
+    "KC_R": {
+      "top": "ई",
+      "bottom": "ी"
+    },
+    "KC_S": {
+      "top": "ए",
+      "bottom": "े"
+    },
+    "KC_T": {
+      "top": "ऊ",
+      "bottom": "ू"
+    },
+    "KC_U": {
+      "top": "ङ",
+      "bottom": "ह"
+    },
+    "KC_V": {
+      "top": "ऩ",
+      "bottom": "न"
+    },
+    "KC_W": {
+      "top": "ऐ",
+      "bottom": "ै"
+    },
+    "KC_X": {
+      "top": "ँ",
+      "bottom": "ं"
+    },
+    "KC_Y": {
+      "top": "भ",
+      "bottom": "ब"
+    },
+    "KC_Z": {
+      "top": "ऎ",
+      "bottom": "ॆ"
+    },
+    "KC_LBRC": {
+      "top": "ढ",
+      "bottom": "ड"
+    },
+    "KC_RBRC": {
+      "top": "ञ",
+      "bottom": "़"
+    },
+    "KC_BSLS": {
+      "top": "ऑ",
+      "bottom": " ॉ"
+    },
+    "KC_SCLN": {
+      "top": "छ",
+      "bottom": "च"
+    },
+    "KC_QUOT": {
+      "top": "ठ",
+      "bottom": "ट"
+    },
+    "KC_COMM": {
+      "top": "ष",
+      "bottom": ""
+    },
+    "KC_DOT": {
+      "top": "।",
+      "bottom": ""
+    },
+    "KC_SLSH": {
+      "top": "य़",
+      "bottom": "य"
+    }
+  }
+}

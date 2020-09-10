@@ -1,0 +1,27 @@
+{
+  "id": "striker",
+  "label": "Striker",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#165495",
+      "color": "#f7f2ea"
+    },
+    "mods": {
+      "background": "#165495",
+      "color": "#f7f2ea"
+    },
+    "accent": {
+      "background": "#32445f",
+      "color": "#f7f2ea"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_PENT": "accent",
+    "KC_SPC": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

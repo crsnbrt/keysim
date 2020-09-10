@@ -1,0 +1,66 @@
+{
+  "id": "vilebloom",
+  "label": "Vilebloom",
+  "manufacturer": "sa",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#396a88",
+      "color": "#ffffff"
+    },
+    "mods": {
+      "background": "#396a88",
+      "color": "#ffffff"
+    },
+    "accent": {
+      "background": "#de85a5",
+      "color": "#ffffff"
+    },
+    "accent2": {
+      "background": "#fe7676",
+      "color": "#ffffff"
+    },
+    "accent3": {
+      "background": "#ffbe96",
+      "color": "#396a88"
+    }
+  },
+  "override": {
+    "KC_C": "accent",
+    "KC_F": "accent",
+    "KC_T": "accent",
+    "KC_6": "accent",
+    "KC_F5": "accent",
+
+    "KC_X": "accent2",
+    "KC_D": "accent2",
+    "KC_R": "accent2",
+    "KC_Z": "accent2",
+    "KC_S": "accent2",
+    "KC_E": "accent2",
+    "KC_5": "accent2",
+    "KC_4": "accent2",
+    "KC_F4": "accent2",
+    "KC_LGUI": "accent2",
+    "KC_LALT": "accent2",
+
+    "KC_LCTL": "accent3",
+    "KC_ESC": "accent3",
+    "KC_LSFT": "accent3",
+    "KC_TAB": "accent3",
+    "KC_CAPS": "accent3",
+    "KC_Q": "accent3",
+    "KC_A": "accent3",
+    "KC_W": "accent3",
+    "KC_1": "accent3",
+    "KC_2": "accent3",
+    "KC_3": "accent3",
+    "KC_F1": "accent3",
+    "KC_F2": "accent3",
+    "KC_F3": "accent3",
+    "KC_GRV": "accent3",
+    "KC_NUBS": "accent3",
+
+    "KC_GESC": "accent3"
+  }
+}

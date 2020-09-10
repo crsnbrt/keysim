@@ -1,0 +1,68 @@
+{
+  "id": "pastel",
+  "label": "Pastel",
+  "manufacturer": "Infinikey",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#d8d1d1",
+      "color": "#c4a9d1"
+    },
+    "mods": {
+      "background": "#a0c1c6",
+      "color": "#d8d1d1"
+    },
+    "accent": {
+      "background": "#c4a9d1",
+      "color": "#d8d1d1"
+    },
+    "accent2": {
+      "background": "#cca8b6",
+      "color": "#d8d1d1"
+    },
+    "accent3": {
+      "background": "#85c3b1",
+      "color": "#d8d1d1"
+    },
+    "accent4": {
+      "background": "#cfa380",
+      "color": "#d8d1d1"
+    },
+    "accent5": {
+      "background": "#d2c288",
+      "color": "#d8d1d1"
+    }
+  },
+  "override": {
+    "KC_TAB": "accent",
+    "KC_CAPS": "accent",
+    "KC_PPLS": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent",
+
+    "KC_LCTRL": "accent2",
+    "KC_LSFT": "accent2",
+    "KC_LGUI": "accent2",
+    "KC_PENT": "accent2",
+
+    "KC_INS": "accent3",
+    "KC_DEL": "accent3",
+    "KC_BSPC": "accent3",
+    "KC_HOME": "accent3",
+    "KC_LEFT": "accent3",
+    "KC_RGUI": "accent3",
+    "KC_MO(1)": "accent3",
+    "KC_MO(2)": "accent3",
+    "KC_MO(3)": "accent3",
+
+    "KC_LALT": "accent4",
+    "KC_RIGHT": "accent4",
+    "KC_F5": "accent4",
+    "KC_F6": "accent4",
+
+    "KC_F7": "accent5",
+    "KC_F8": "accent5",
+    "KC_DOWN": "accent5",
+    "KC_RALT": "accent5"
+  }
+}

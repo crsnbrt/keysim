@@ -1,0 +1,54 @@
+{
+  "fontFamily": "\"AppleGothic\", sans-serif",
+  "fontSizeMultiplier": 1.1,
+  "chars": {
+    "KC_A": "ㅁ",
+    "KC_B": "ㅠ",
+    "KC_C": "ㅊ",
+    "KC_D": "ㅇ",
+    "KC_E": {
+      "top": "ㄸ",
+      "bottom": "ㄷ"
+    },
+    "KC_F": "ㄹ",
+    "KC_G": "ㅎ",
+    "KC_H": "ㅗ",
+    "KC_I": "ㅑ",
+    "KC_J": "ㅓ",
+    "KC_K": "ㅏ",
+    "KC_L": "ㅣ",
+    "KC_M": "ㅡ",
+    "KC_N": "ㅜ",
+    "KC_O": {
+      "top": "ㅒ",
+      "bottom": "ㅐ"
+    },
+    "KC_P": {
+      "top": "ㅖ",
+      "bottom": "ㅔ"
+    },
+    "KC_Q": {
+      "top": "ㅃ",
+      "bottom": "ㅂ"
+    },
+    "KC_R": {
+      "top": "ㄲ",
+      "bottom": "ㄱ"
+    },
+    "KC_S": "ㄴ",
+    "KC_T": {
+      "top": "ㅆ",
+      "bottom": "ㅅ"
+    },
+
+    "KC_W": {
+      "top": "ㅉ",
+      "bottom": "ㅈ"
+    },
+    "KC_U": "ㅕ",
+    "KC_V": "ㅍ",
+    "KC_X": "ㅌ",
+    "KC_Y": "ㅛ",
+    "KC_Z": "ㅋ"
+  }
+}

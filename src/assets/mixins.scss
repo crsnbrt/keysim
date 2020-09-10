@@ -1,0 +1,29 @@
+@import "variables";
+
+@mixin smallcaps() {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@mixin button($background: $base, $color: black) {
+  background: $background;
+  color: $color;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 0.3rem;
+  padding: 0 1.75rem;
+  height: 3em;
+  text-transform: uppercase;
+  &:active {
+    @include inset($background, $background);
+  }
+}
+
+@mixin field() {
+}
+
+@mixin hr() {
+}

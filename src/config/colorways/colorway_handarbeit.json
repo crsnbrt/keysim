@@ -1,0 +1,119 @@
+{
+  "id": "handarbeit",
+  "label": "Handarbeit",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#bc251e",
+      "color": "#f7f2ea"
+    },
+    "mods": {
+      "background": "#5d437e",
+      "color": "#f7f2ea"
+    },
+    "accent": {
+      "background": "#e5a100",
+      "color": "#f7f2ea"
+    },
+    "accent2": {
+      "background": "#00589f",
+      "color": "#f7f2ea"
+    },
+    "accent3": {
+      "background": "#00773a",
+      "color": "#f7f2ea"
+    },
+    "accent4": {
+      "background": "#689b34",
+      "color": "#f7f2ea"
+    },
+    "accent5": {
+      "background": "#ee6900",
+      "color": "#f7f2ea"
+    },
+    "accent6": {
+      "background": "#cf8379",
+      "color": "#f7f2ea"
+    },
+    "accent7": {
+      "background": "#779b78",
+      "color": "#f7f2ea"
+    },
+    "accent8": {
+      "background": "#025b72",
+      "color": "#f7f2ea"
+    }
+  },
+  "override": {
+    "KC_ESC": "base",
+    "KC_GESC": "base",
+    "KC_LCTL": "base",
+    "KC_RCTL": "base",
+    "KC_LALT": "base",
+    "KC_RALT": "base",
+    "KC_PGUP": "base",
+    "KC_PGDN": "base",
+    "KC_P1": "mods",
+    "KC_P2": "mods",
+    "KC_P3": "mods",
+    "KC_P4": "mods",
+    "KC_P6": "mods",
+    "KC_P7": "mods",
+    "KC_P8": "mods",
+    "KC_P9": "mods",
+    "KC_ENT": "accent",
+    "KC_SPC": "accent",
+    "KC_INS": "accent",
+    "KC_DEL": "accent",
+    "KC_NLCK": "accent",
+    "KC_PAST": "accent",
+    "KC_PSLS": "accent",
+    "KC_PMNS": "accent",
+    "KC_J": "accent",
+    "KC_F": "accent",
+    "KC_DELETE": "accent",
+    "KC_INSERT": "accent",
+    "KC_UP": "accent",
+    "KC_F9": "accent",
+    "KC_F10": "accent",
+    "KC_F11": "accent",
+    "KC_F12": "accent",
+    "KC_BSLS": "accent2",
+    "KC_LBRC": "accent2",
+    "KC_RBRC": "accent2",
+    "KC_DOT": "accent2",
+    "KC_SLSH": "accent2",
+    "KC_COMM": "accent2",
+    "KC_SCLN": "accent2",
+    "KC_QUOT": "accent2",
+    "KC_F1": "accent2",
+    "KC_F2": "accent2",
+    "KC_F3": "accent2",
+    "KC_F4": "accent2",
+    "KC_PAUS": "accent3",
+    "KC_SLCK": "accent3",
+    "KC_PSCR": "accent3",
+    "KC_1": "accent4",
+    "KC_2": "accent4",
+    "KC_3": "accent4",
+    "KC_4": "accent4",
+    "KC_5": "accent4",
+    "KC_6": "accent4",
+    "KC_7": "accent4",
+    "KC_8": "accent4",
+    "KC_9": "accent4",
+    "KC_0": "accent4",
+    "KC_DOWN": "accent4",
+    "KC_HOME": "accent4",
+    "KC_END": "accent4",
+    "KC_LEFT": "accent5",
+    "KC_RGHT": "accent5",
+    "KC_PPLS": "accent6",
+    "KC_F5": "accent6",
+    "KC_F6": "accent6",
+    "KC_F7": "accent6",
+    "KC_F8": "accent6",
+    "KC_PENT": "accent7",
+    "KC_PDOT": "accent8"
+  }
+}

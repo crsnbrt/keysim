@@ -1,0 +1,24 @@
+{
+  "id": "demonic",
+  "label": "Demonic",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#171718",
+      "color": "#dd1126"
+    },
+    "mods": {
+      "background": "#171718",
+      "color": "#dd1126"
+    },
+    "accent": {
+      "background": "#ff0000",
+      "color": "#171718"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

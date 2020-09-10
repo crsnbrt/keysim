@@ -1,0 +1,35 @@
+@import "../../assets/variables";
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  svg {
+    cursor: pointer;
+    fill: var(--light-1);
+    width: 20px;
+    &:hover {
+      fill: var(--accent);
+    }
+  }
+}
+
+.inner {
+  align-items: center;
+  display: flex;
+}
+
+.message {
+  z-index: 12;
+  left: -0.5em;
+  font-size: 14px;
+  max-width: 400px;
+  min-width: 180px;
+  position: absolute;
+  padding: 0.75em 1em;
+  top: calc(100% + 0.5em);
+  line-height: 1.6;
+  color: var(--light-3);
+  background: var(--light-1);
+  border-radius: $primary-border-radius;
+  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.5);
+}

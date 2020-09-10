@@ -1,0 +1,25 @@
+{
+  "id": "peaches_cream",
+  "label": "Peaches n Cream",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#e1dbd1",
+      "color": "#e0ab88",
+      "subColor": "#db795e"
+    },
+    "mods": {
+      "background": "#e0ab88",
+      "color": "#ffffff"
+    },
+    "accent": {
+      "background": "#db795e",
+      "color": "#e1dbd1"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "terminal",
+  "label": "Terminal",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#393b3b",
+      "color": "#689b34"
+    },
+    "mods": {
+      "background": "#393b3b",
+      "color": "#689b34"
+    },
+    "accent": {
+      "background": "#689b34",
+      "color": "#393b3b"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

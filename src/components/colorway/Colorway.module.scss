@@ -1,0 +1,141 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.colorway {
+  width: 100%;
+  position: relative;
+}
+
+.preview {
+  display: flex;
+  cursor: pointer;
+  padding: 0.75em 0;
+  position: relative;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--light-3);
+  &:before {
+    content: "";
+    opacity: 0;
+    margin-left: -$sidebar-padding;
+    width: calc(100% + (#{$sidebar-padding}) * 2);
+    height: 100%;
+    display: block;
+    position: absolute;
+    transition: opacity 0.2s;
+    background: var(--accent-transparent);
+  }
+  &:focus {
+    text-decoration: underline;
+  }
+  &:focus:before,
+  &:hover:before {
+    opacity: 1;
+  }
+}
+.previewActive {
+  @extend .preview;
+  cursor: initial;
+  // &:hover {
+  //   background: transparent;
+  // }
+  &:before {
+    //opacity: 1;
+  }
+  &:after {
+    position: absolute;
+    display: block;
+    background: var(--accent);
+    top: 50%;
+    transform: translate(-#{$sidebar-padding}, -50%);
+    width: 3px;
+    content: "";
+    height: 50%;
+  }
+}
+.info {
+  text-align: left;
+  z-index: 1;
+}
+.title {
+  text-align: left;
+  font-size: 16px;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+}
+.swatches {
+  z-index: 1;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  border-radius: $primary-border-radius;
+  overflow: hidden;
+  &:after {
+    content: "";
+    border-radius: $primary-border-radius;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15),
+      inset 0 2px 2px rgba(255, 255, 2555, 0.15);
+    z-index: 1;
+  }
+}
+
+.swatch {
+  width: $primary-field-height;
+  height: $primary-field-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    font-family: "legends";
+    font-size: 34px;
+    padding-top: 19px;
+    padding-left: 17px;
+  }
+}
+
+.description {
+  padding: 0px 0;
+  font-size: 12px;
+  margin: 0 0.5em 0 0;
+  display: inline-block;
+  color: var(--light-1);
+  text-transform: uppercase;
+}
+.actions {
+  display: flex;
+  font-size: 14px;
+  color: var(--light-1);
+}
+.action {
+  display: flex;
+  cursor: pointer;
+  margin: 6px 0 0 0;
+  color: var(--accent);
+  text-decoration: underline;
+  &:after {
+    display: none;
+    opacity: 0;
+    content: "✕";
+    margin-left: 5px;
+  }
+  svg {
+    margin-right: 4px;
+    width: 15px;
+  }
+  &:focus,
+  &:hover {
+    color: white;
+    &:after {
+      display: inline;
+      opacity: 1;
+    }
+  }
+}

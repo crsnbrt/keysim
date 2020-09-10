@@ -1,0 +1,15 @@
+@import "../../assets/variables";
+
+.about {
+  font-size: 14px;
+}
+
+.legal {
+  margin: 0;
+  font-size: 12px;
+  color: var(--light-2);
+
+  span {
+    color: var(--accent);
+  }
+}

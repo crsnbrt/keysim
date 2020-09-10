@@ -1,0 +1,16 @@
+@import "../assets/variables";
+
+.page {
+  color: var(--light-3);
+  width: 100%;
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+.container {
+  padding: 2rem 1rem;
+  max-width: 700px;
+  margin: auto;
+}

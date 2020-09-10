@@ -1,0 +1,29 @@
+{
+  "id": "9009",
+  "label": "9009",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#d8d2c3",
+      "color": "#171718"
+    },
+    "mods": {
+      "background": "#aca693",
+      "color": "#171718"
+    },
+    "accent": {
+      "background": "#c87e74",
+      "color": "#171718"
+    },
+    "accent2": {
+      "background": "#768e72",
+      "color": "#171718"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent2",
+    "KC_ESC": "accent",
+    "KC_SPC": "accent",
+    "KC_GESC": "accent"
+  }
+}

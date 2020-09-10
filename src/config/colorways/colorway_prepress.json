@@ -1,0 +1,42 @@
+{
+  "id": "prepress",
+  "label": "Prepress",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#7e7d79",
+      "subColor": "#141416",
+      "color": "#141416"
+    },
+    "mods": {
+      "background": "#333333",
+      "subColor": "#7e7d79",
+      "color": "#7e7d79"
+    },
+    "accent": {
+      "background": "#bc0f71",
+      "subColor": "#141416",
+      "color": "#141416"
+    },
+    "accent2": {
+      "background": "#0280c8",
+      "subColor": "#141416",
+      "color": "#141416"
+    },
+    "accent3": {
+      "background": "#f8ec34",
+      "subColor": "#141416",
+      "color": "#141416"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent3",
+    "KC_PENT": "accent3",
+    "KC_ESC": "accent2",
+    "KC_GESC": "accent2",
+    "KC_PMNS": "accent2",
+    "KC_SPC": "accent",
+    "KC_PPLS": "accent"
+  }
+}

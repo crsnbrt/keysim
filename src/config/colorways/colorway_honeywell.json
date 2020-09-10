@@ -1,0 +1,24 @@
+{
+  "id": "honeywell",
+  "label": "Honeywell",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#e1dbd1",
+      "color": "#6b7578"
+    },
+    "mods": {
+      "background": "#6b7578",
+      "color": "#e1dbd1"
+    },
+    "accent": {
+      "background": "#b5240c",
+      "color": "#e1dbd1"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}
