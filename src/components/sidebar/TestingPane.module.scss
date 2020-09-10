@@ -45,8 +45,43 @@
 }
 
 .words {
-  textarea {
-    font-family: "Inter var", sans-serif !important;
-    font-size: 1.2rem !important;
+  border-radius: $primary-border-radius;
+  border: 1px solid transparent;
+  background: $color-light-1;
+  color: $color-light-3;
+  white-space: pre-wrap;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  min-height: 168px;
+  line-height: 1.5;
+  margin-top: 1em;
+  padding: 1em;
+  &:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-transparent);
   }
+}
+
+.timer {
+  font-size: 14px;
+  p {
+    margin: 0;
+    &:last-child {
+      color: $color-light-2;
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.charAccent {
+  &:first-letter {
+    color: var(--accent);
+  }
+}
+
+.abc {
+  color: red;
 }

@@ -126,16 +126,6 @@ export default function ColorwayEditor() {
             help={"Apply the selected swatch to a each key pressed."}
             handler={() => dispatch(togglePaintWithKeys())}
           />
-          {/* <div className={styles.back}>
-          <Button
-            title="Back to list"
-            isText={true}
-            icon={<ArrowIcon />}
-            handler={() => {
-              dispatch(toggleEditing());
-            }}
-          />
-        </div> */}
 
           <div className={styles.name}>
             <label htmlFor="colorway_name" className={styles.label}>
