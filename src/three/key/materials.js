@@ -37,7 +37,7 @@ export const setKeyMaterialState = (mesh, state, isoent) => {
 const setMaterialIndexes = (mesh, side, top, isoent) => {
   let threshold = isoent ? 10 : 6;
   mesh.geometry.faces.forEach((f, i) => {
-    let isTop = i < threshold;
+    let isTop = i < threshold || i === 8;
     f.materialIndex = isTop ? top : side;
   });
   mesh.geometry.groupsNeedUpdate = true;

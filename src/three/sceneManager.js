@@ -21,6 +21,7 @@ export default class SceneManager extends Collection {
     this.renderer = new THREE.WebGLRenderer({
       alpha: true,
       logarithmicDepthBuffer: true,
+      preserveDrawingBuffer: true,
       antialias: true,
     });
     this.renderer.localClippingEnabled = true;
@@ -43,18 +44,37 @@ export default class SceneManager extends Collection {
 
     //bind global events
     window.addEventListener("resize", (e) => this.resize(e), false);
-    this.el.addEventListener("mousemove", (e) => this.mouseMove(e), false);
+    this.el.addEventListener("mousemove", (e) => this.move(e), false);
     this.el.addEventListener("click", (e) => this.mouseClick(e), false);
+    this.el.addEventListener(
+      "touchstart",
+      (e) => {
+        this.move(e);
+        this.mouseClick(e);
+      },
+      false
+    );
 
-    //debug helper
-    // document.addEventListener("keydown", (e) => {
-    //   if (e.key === "F1") {
-    //     console.log("Camera Position:");
-    //     console.log(this.camera.position);
-    //     console.log("Controls Target:");
-    //     console.log(this.controls.target);
-    //   }
-    // });
+    //some helpers for reading and setting orbit controls position / taking screenshots
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "F1") {
+        console.log("Camera Position:");
+        console.log(this.camera.position);
+        console.log("Controls Target:");
+        console.log(this.controls.target);
+      }
+      if (e.key === "F2") {
+        this.camera.position.set(-7, 8, 9);
+        this.controls.target.set(-3, -2, 1);
+      }
+      if (e.key === "F3") {
+        let image = this.renderer.domElement.toDataURL();
+        let imgNode = document.createElement("img");
+        imgNode.src = image;
+        document.body.appendChild(imgNode);
+      }
+    });
+
     subscribe("colorways.editing", (state) => {
       this.editing = state.colorways.editing;
     });
@@ -77,7 +97,7 @@ export default class SceneManager extends Collection {
     // this.cssRenderer.setSize(this.w, this.h);
   }
   setupCamera() {
-    this.camera = new THREE.PerspectiveCamera(60, this.w / this.h, 1, 3000);
+    this.camera = new THREE.PerspectiveCamera(60, this.w / this.h, 1, 1000);
     this.camera.position.y = 15;
     this.camera.position.z = 15;
     this.camera.position.x = 0;
@@ -97,46 +117,24 @@ export default class SceneManager extends Collection {
 
     //main
     let primaryLight = new THREE.DirectionalLight("#dddddd", 0.7);
-    primaryLight.position.set(0, 10, 10);
+    primaryLight.position.set(5, 10, 10);
     primaryLight.target.position.set(0, -10, -10);
     primaryLight.target.updateMatrixWorld();
     this.scene.add(primaryLight, primaryLight.target);
 
     //secondary shadows
-    let shadowLight = new THREE.DirectionalLight("#FFFFFF", 0.1);
-    shadowLight.position.set(16, 15, 10);
-    shadowLight.target.position.set(-20, -20, -10);
+    let shadowLight = new THREE.DirectionalLight("#FFFFFF", 0.2);
+    shadowLight.position.set(-4, 3, -10);
+    shadowLight.target.position.set(0, 0, 0);
     shadowLight.target.updateMatrixWorld();
     this.scene.add(shadowLight, shadowLight.target);
-
-    let reflectionLight = new THREE.DirectionalLight("red", 0.1);
-    reflectionLight.position.set(12, 8, -5);
-    reflectionLight.target.position.set(7, 0, 5);
-    reflectionLight.target.updateMatrixWorld();
-    //this.scene.add(reflectionLight, reflectionLight.target);
-
-    //SHODOWCASTING
-    //this.renderer.shadowMap.enabled = true;
-    //shadowLight.castShadow = true;
-    //let size = 10;
-    // shadowLight.shadow.camera.far = 80;
-    // shadowLight.shadow.camera.left = size;
-    // shadowLight.shadow.camera.top = size;
-    // shadowLight.shadow.camera.right = -size;
-    // shadowLight.shadow.camera.bottom = -size;
-    // shadowLight.shadow.mapSize.width = 1024;
-    // shadowLight.shadow.mapSize.height = 1024;
-    //const cameraHelper = new THREE.CameraHelper(shadowLight.shadow.camera);
-    //this.scene.add(cameraHelper);
 
     //lighthelpers
     // let slh = new THREE.DirectionalLightHelper(shadowLight, 2);
     // let plh = new THREE.DirectionalLightHelper(primaryLight, 2);
-    // let rlh = new THREE.DirectionalLightHelper(reflectionLight, 1);
     // slh.update();
     // plh.update();
-    // rlh.update();
-    //this.scene.add(slh, plh, rlh);
+    // this.scene.add(slh, plh);
   }
   mouseClick(e) {
     if (!this.editing) return;
@@ -147,10 +145,11 @@ export default class SceneManager extends Collection {
       document.dispatchEvent(event);
     }
   }
-  mouseMove(e) {
+  move(e) {
     e.preventDefault();
-    let l = e.clientX - this.sidebarWidth;
-    let t = e.clientY - 0;
+    let isTouch = e.type === "touchstart";
+    let l = (isTouch ? e.touches[0].clientX : e.clientX) - this.sidebarWidth;
+    let t = (isTouch ? e.touches[0].clientY : e.clientY) - 0;
     this.mouse.x = (l / this.w) * 2 - 1;
     this.mouse.y = -(t / this.h) * 2 + 1;
   }

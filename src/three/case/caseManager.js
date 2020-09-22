@@ -6,6 +6,8 @@ import Util from "../../util/math";
 import case_1 from "./case_1";
 import case_2 from "./case_2";
 import badge from "./badge";
+import ColorUtil from "../../util/color";
+import { lightTexture } from "./lightTexture";
 
 import { TextureLoader } from "three/src/loaders/TextureLoader.js";
 import shadowPath from "../../assets/dist/shadow-key-noise.png";
@@ -135,6 +137,10 @@ export default class CaseManager {
       this.createBadge();
       this.createPlate();
     });
+
+    subscribe("colorways.active", () => {
+      this.updateLightMap();
+    });
   }
 
   position() {
@@ -172,13 +178,15 @@ export default class CaseManager {
     this.ao.repeat.x = this.texScale;
     this.ao.repeat.y = this.texScale;
     this.ao.rotation = Math.PI / 2;
+
+    this.lightTexture = lightTexture(ColorUtil.getAccent());
   }
 
   createPlate() {
     if (this.plate) this.group.remove(this.plate);
     let geometry_plate = new THREE.PlaneGeometry(
-      this.width - this.bezel,
-      this.depth - this.bezel
+      this.width - this.bezel * 2,
+      this.depth - this.bezel * 2
     );
     let material_plate = new THREE.MeshLambertMaterial({
       color: "black",
@@ -260,6 +268,11 @@ export default class CaseManager {
     this.position();
   }
 
+  updateLightMap() {
+    this.lightTexture = lightTexture(ColorUtil.getAccent());
+    this.case.material[1].lightMap = this.lightTexture;
+  }
+
   updateCaseMaterial(color = this.color, finish = this.finish) {
     let materials = [];
     let options = MATERIAL_OPTIONS[finish];
@@ -277,11 +290,13 @@ export default class CaseManager {
       )
     );
     //side material
+    options.lightMap = this.lightTexture;
     let materialSecondary = new THREE.MeshPhysicalMaterial(
       Object.assign(
         {
           color: color,
           aoMap: this.aoShadowTexture,
+          aoMapIntensity: 0.6,
         },
         options
       )

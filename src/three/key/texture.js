@@ -2,10 +2,8 @@ import * as THREE from "three";
 import LEGENDS from "../../config/legends/primary/primary";
 import SUBS from "../../config/legends/subs/subs";
 import KeyUtil from "../../util/keyboard";
-import qs from "query-string";
 
-const DEBUG = qs.parse(document.location.search)?.debug;
-const MIP_COUNT = 0;
+const MIP_COUNT = 1;
 
 //genertates a texture with canvas for top of key
 export const keyTexture = (opts) => {
@@ -158,37 +156,32 @@ export const keyTexture = (opts) => {
     }
   }
 
-  if (DEBUG) {
-    document.body.appendChild(canvas);
-  }
-
   texture = new THREE.CanvasTexture(canvas);
 
   if (MIP_COUNT > 0) {
-    texture.mipmaps[0] = canvas;
-    for (let i = 1; i < MIP_COUNT + 1; i++) {
-      let scale = 1 / 2 ** i;
-      let mip_w = opts.w * pxPerU * scale;
-      let mip_h = opts.h * pxPerU * scale;
-      let mip_canvas = document.createElement("canvas");
-      let mip_ctx = mip_canvas.getContext("2d");
-      mip_canvas.width = mip_w;
-      mip_canvas.height = mip_h;
-
-      mip_ctx.fillStyle = "#ff0000";
-      mip_ctx.fillRect(0, 0, mip_w, mip_h);
-
-      // mip_ctx.scale(scale, scale);
-      // mip_ctx.drawImage(canvas, 0, 0);
-      texture.mipmaps[i] = mip_canvas;
-      if (DEBUG) {
-        document.body.appendChild(mip_canvas);
-      }
-    }
+    // texture.mipmaps[0] = canvas;
+    // for (let i = 1; i < MIP_COUNT + 1; i++) {
+    //   let scale = 1 / 2 ** i;
+    //   let mip_w = opts.w * pxPerU * scale;
+    //   let mip_h = opts.h * pxPerU * scale;
+    //   let mip_canvas = document.createElement("canvas");
+    //   let mip_ctx = mip_canvas.getContext("2d");
+    //   mip_canvas.width = mip_w;
+    //   mip_canvas.height = mip_h;
+    //   mip_ctx.fillStyle = "#ff0000";
+    //   mip_ctx.fillRect(0, 0, mip_w, mip_h);
+    //   // mip_ctx.scale(scale, scale);
+    //   // mip_ctx.drawImage(canvas, 0, 0);
+    //   texture.mipmaps[i] = mip_canvas;
+    //   if (DEBUG) {
+    //     document.body.appendChild(mip_canvas);
+    //   }
+    // }
   }
-  //console.log(texture);
+
+  //document.body.appendChild(canvas);
 
   texture.needsUpdate = true;
-  texture.minFilter = THREE.LinearMipmapLinearFilter;
+  texture.minFilter = THREE.NearestMipmapNearestFilter;
   return texture;
 };

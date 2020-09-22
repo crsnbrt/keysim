@@ -115,7 +115,7 @@
     position: absolute;
   }
 
-  @media (max-width: $break) {
+  @media screen and (max-width: $break) {
     flex-direction: column;
     overflow: initial;
     display: flex;

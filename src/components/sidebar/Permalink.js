@@ -31,8 +31,8 @@ export default function PermalinkButton() {
         justifyContent: "center",
         width: "3em",
         height: "3em",
-        left: "24rem",
-        top: "2rem",
+        left: "21em",
+        top: "1em",
         zIndex: 10,
         cursor: "pointer",
         svg: {
