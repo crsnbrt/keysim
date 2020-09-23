@@ -28,17 +28,6 @@ export default function About() {
           </a>
         </p>
         <p>
-          If you would like to receive updates on keyboard simulator features or
-          changes{" "}
-          <a
-            href="https://forms.gle/i7kFgQ98yr47Cthx7"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            sign up here
-          </a>
-        </p>
-        <p>
           Note: precise color values are not always available for community
           colorways and therefore colorways may use approximate values.
         </p>
@@ -49,7 +38,15 @@ export default function About() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            materials
+            material
+          </a>
+          ,{" "}
+          <a
+            href="https://hdrihaven.com/hdri/?c=indoor&h=paul_lobe_haus"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            material
           </a>
         </p>
         <div className={styles.legal}>

@@ -21,7 +21,6 @@ export default class SceneManager extends Collection {
     this.renderer = new THREE.WebGLRenderer({
       alpha: true,
       logarithmicDepthBuffer: true,
-      preserveDrawingBuffer: true,
       antialias: true,
     });
     this.renderer.localClippingEnabled = true;
@@ -67,12 +66,12 @@ export default class SceneManager extends Collection {
         this.camera.position.set(-7, 8, 9);
         this.controls.target.set(-3, -2, 1);
       }
-      if (e.key === "F3") {
-        let image = this.renderer.domElement.toDataURL();
-        let imgNode = document.createElement("img");
-        imgNode.src = image;
-        document.body.appendChild(imgNode);
-      }
+      // if (e.key === "F3") {
+      //   let image = this.renderer.domElement.toDataURL();
+      //   let imgNode = document.createElement("img");
+      //   imgNode.src = image;
+      //   document.body.appendChild(imgNode);
+      // }
     });
 
     subscribe("colorways.editing", (state) => {
