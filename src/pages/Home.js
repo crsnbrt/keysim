@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Sidebar from "../components/sidebar/Sidebar";
 import threeApp from "../three/index";
 import Permalink from "../components/sidebar/Permalink";
 
 export default function Home() {
   const rootEl = useRef(null);
+  const [showSidebar, setShowSidebar] = useState(true);
 
   useEffect(() => {
     threeApp(rootEl.current);
@@ -12,7 +13,8 @@ export default function Home() {
 
   return (
     <>
-      <Sidebar />
+      {showSidebar && <Sidebar />}
+
       <div
         id="canvas-wrapper"
         ref={rootEl}

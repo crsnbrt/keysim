@@ -76,10 +76,10 @@ export default function ColorwayEditor() {
 
   const addSwatch = () => {
     let updatedColorway = JSON.parse(JSON.stringify(colorway));
-    updatedColorway.swatches[
-      "swatch-" + (Object.keys(colorway.swatches).length - 2)
-    ] = ColorUtil.getRandomAccent();
+    let new_swatch_id = "swatch-" + (Object.keys(colorway.swatches).length - 2);
+    updatedColorway.swatches[new_swatch_id] = ColorUtil.getRandomAccent();
     dispatch(updateCustomColorway(updatedColorway));
+    dispatch(setActiveSwatch(new_swatch_id));
   };
 
   // const updateColorwayFromJson = (e) => {
