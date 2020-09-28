@@ -10,6 +10,7 @@ import {
   updateMaterials,
 } from "./materials";
 import { keyGeometry, keyGeometryISOEnter } from "./geometry";
+import SoundUtil from "../../util/sound";
 
 export const KEYSTATES = {
   INITIAL: 0, // full height
@@ -178,6 +179,7 @@ export class Key {
       this.setState(KEYSTATES.MOVING_UP);
       this.queueRelease = false;
     }
+    SoundUtil.playSwitch();
   }
   updateColors(textureOnly) {
     this.colorway = ColorUtil.colorway;
