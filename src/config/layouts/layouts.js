@@ -4,6 +4,7 @@ import layout_60_iso from "./layout_60_ISO.json";
 import layout_60_hhkb from "./layout_60_hhkb.json";
 import layout_60_wkl from "./layout_60_wkl.json";
 import layout_65 from "./layout_65_default.json";
+import layout_75 from "./layout_75_default.json";
 import layout_80 from "./layout_80_default.json";
 import layout_numpad from "./layout_numpad.json";
 import layout_40_ortho from "./layout_40_ortho.json";
@@ -15,6 +16,7 @@ const LAYOUTS = {
   40: layout_40,
   60: layout_60,
   65: layout_65,
+  75: layout_75,
   80: layout_80,
   95: layout_95,
   100: layout_100,

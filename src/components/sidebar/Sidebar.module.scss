@@ -10,11 +10,18 @@
   width: $sidebar-width;
   flex-direction: column;
   scrollbar-color: $color-dark-1 var(--main);
+
+  a {
+    color: var(--accent);
+    &:focus,
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 .intro {
   padding: 0 $sidebar-padding;
-  //margin-bottom: 1rem;
   p {
     margin-top: 0.25em;
     font-size: 14px;

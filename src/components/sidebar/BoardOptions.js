@@ -51,6 +51,7 @@ export default function BoardOptions() {
             { label: "60% WKL", value: "60wkl", img: icon60wkl },
             { label: "60% HHKB", value: "60hhkb", img: icon60hhkb },
             { label: "65%", value: "65", img: icon65 },
+            { label: "75%", value: "75", img: icon60 },
             { label: "80%", value: "80", img: icon80 },
             { label: "95%", value: "95", img: icon95 },
             { label: "100%", value: "100", img: icon100 },
