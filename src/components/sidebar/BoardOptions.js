@@ -45,8 +45,9 @@ export default function BoardOptions() {
           options={[
             { label: "10% numpad", value: "numpad", img: icon10 },
             { label: "40%", value: "40", img: icon40 },
-            { label: "40% ortho", value: "ortho", img: icon40 },
+            { label: "40% ortho", value: "40ortho", img: icon40 },
             { label: "50%", value: "leftnum", img: icon45 },
+            { label: "50% ortho", value: "50ortho", img: icon40 },
             { label: "60%", value: "60", img: icon60 },
             { label: "60% ISO", value: "60iso", img: icon60 },
             { label: "60% WKL", value: "60wkl", img: icon60wkl },
