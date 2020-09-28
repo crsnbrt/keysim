@@ -20,11 +20,6 @@ export default function Sidebar() {
             <Name />
           </h1>
         </div>
-        {/* <p>
-          Vivamus ut rhoncus ligula. In dignissim efficitur tempor. Mauris
-          rutrum elit eget ex fringilla, et tempor quam hendrerit. Sed viverra
-          molestie volutpat. Maecenas rutrum lacinia
-        </p> */}
       </div>
       <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
         <TabList>

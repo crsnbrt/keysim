@@ -1,0 +1,65 @@
+@import "../../assets/variables.scss";
+
+.actionBar {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  z-index: 10;
+  left: 21em !important;
+  top: 1em !important;
+
+  @media screen and (max-width: $break) {
+    background: black;
+    justify-content: center;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    order: -1;
+  }
+}
+
+.action {
+  background: black;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  cursor: pointer;
+  border-right: 1px solid rgba(white, 0.2);
+  color: $color-light-3;
+
+  &:first-child {
+    border-top-left-radius: $primary-border-radius;
+    border-bottom-left-radius: $primary-border-radius;
+  }
+  &:last-child {
+    border-top-right-radius: $primary-border-radius;
+    border-bottom-right-radius: $primary-border-radius;
+  }
+  svg: {
+    cursor: pointer;
+    fill: white;
+  }
+  &:hover svg {
+    fill: var(--accent);
+  }
+  &:nth-child(2):hover svg {
+    fill: transparent;
+    stroke: var(--accent);
+  }
+}
+
+.tooltip {
+  position: absolute;
+  color: white;
+  background: black;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 120px;
+  width: auto;
+  top: 110%;
+}

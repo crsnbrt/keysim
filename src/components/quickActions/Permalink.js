@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { getPermalink } from "../../store/qs";
 import { ReactComponent as LinkIcon } from "../../assets/icons/icon_link.svg";
+import styles from "./action.module.scss";
 
 export default function PermalinkButton() {
   const node = useRef(null);
@@ -19,26 +20,10 @@ export default function PermalinkButton() {
   return (
     <div
       id="permalink"
+      role="button"
       aria-label={message}
       onClick={copyPermalink}
-      style={{
-        background: "black",
-        borderRadius: "50%",
-        position: "absolute",
-        padding: "1em",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "3em",
-        height: "3em",
-        left: "21em",
-        top: "1em",
-        zIndex: 10,
-        cursor: "pointer",
-        svg: {
-          cursor: "pointer",
-        },
-      }}
+      className={styles.action}
       onMouseEnter={() => {
         setVisible(true);
       }}
@@ -55,26 +40,13 @@ export default function PermalinkButton() {
         style={{
           cursor: "pointer",
           position: "absolute",
+          pointerEvents: "none",
           opacity: "0",
         }}
       />
       <LinkIcon />
       {visible && (
-        <div
-          role="tooltip"
-          style={{
-            position: "absolute",
-            color: "white",
-            background: "black",
-            padding: "5px",
-            fontSize: "12px",
-            fontWeight: "bold",
-            top: "110%",
-            textAlign: "center",
-            minWidth: "120px",
-            width: "auto",
-          }}
-        >
+        <div role="tooltip" className={styles.tooltip}>
           {message}
         </div>
       )}

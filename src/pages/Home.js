@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Sidebar from "../components/sidebar/Sidebar";
 import threeApp from "../three/index";
-import Permalink from "../components/sidebar/Permalink";
+import QuickActions from "../components/quickActions/QuickActions";
 
 export default function Home() {
   const rootEl = useRef(null);
@@ -21,7 +21,7 @@ export default function Home() {
         role="region"
         aria-label="3d scene of keyboard"
       ></div>
-      <Permalink />
+      <QuickActions />
     </>
   );
 }
