@@ -59,8 +59,7 @@ export default class ThreeUtil {
     let image = document.createElement("img");
     image.src = data;
     let w = window.open("about:blank");
-    setTimeout(function () {
-      w.document.write(image.outerHTML);
-    }, 0);
+    w.document.write(image.outerHTML);
+    w.document.close();
   }
 }

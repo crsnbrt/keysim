@@ -1,4 +1,4 @@
-import BOARDS from "../config/boards/boards";
+import LAYOUTS from "../config/layouts/layouts";
 
 const fs = require("fs");
 const path = require("path");
@@ -22,8 +22,8 @@ const stop1Color = DEBUG ? "red" : `rgba(0, 0, 0, 0.2)`;
 const stop2Color = DEBUG ? "green" : `rgba(0, 0, 0, 0.2)`;
 const mask_overlap = 30;
 
-const layouts = Object.keys(BOARDS).map((board) => {
-  let b = BOARDS[board];
+const layouts = Object.keys(LAYOUTS).map((board) => {
+  let b = LAYOUTS[board];
   return {
     name: board,
     w: b.width,

@@ -22,6 +22,7 @@ import shadow_path_60hhkb from "../../assets/dist/60hhkb.png";
 import shadow_path_60iso from "../../assets/dist/60iso.png";
 import shadow_path_60wkl from "../../assets/dist/60wkl.png";
 import shadow_path_65 from "../../assets/dist/65.png";
+import shadow_path_75 from "../../assets/dist/75.png";
 import shadow_path_80 from "../../assets/dist/80.png";
 import shadow_path_95 from "../../assets/dist/95.png";
 import shadow_path_leftnum from "../../assets/dist/leftnum.png";
@@ -42,6 +43,7 @@ const shadow_paths = {
   shadow_path_60iso,
   shadow_path_60wkl,
   shadow_path_65,
+  shadow_path_75,
   shadow_path_80,
   shadow_path_95,
   shadow_path_leftnum,
