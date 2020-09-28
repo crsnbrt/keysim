@@ -15,19 +15,22 @@ import noisePath from "../../assets/dist/noise.png";
 import brushedRoughness from "../../assets/dist/brushed-metal_roughness-512.png";
 import brushedAlbedo from "../../assets/dist/brushed-metal_albedo-512.png";
 import brushedAo from "../../assets/dist/brushed-metal_ao-512.png";
-import shadow_path_100 from "../../assets/dist/100.png";
-import shadow_path_40 from "../../assets/dist/40.png";
-import shadow_path_60 from "../../assets/dist/60.png";
-import shadow_path_60hhkb from "../../assets/dist/60hhkb.png";
-import shadow_path_60iso from "../../assets/dist/60iso.png";
-import shadow_path_60wkl from "../../assets/dist/60wkl.png";
-import shadow_path_65 from "../../assets/dist/65.png";
-import shadow_path_75 from "../../assets/dist/75.png";
-import shadow_path_80 from "../../assets/dist/80.png";
-import shadow_path_95 from "../../assets/dist/95.png";
-import shadow_path_leftnum from "../../assets/dist/leftnum.png";
-import shadow_path_numpad from "../../assets/dist/numpad.png";
-import shadow_path_ortho from "../../assets/dist/ortho.png";
+
+import shadow_path_100 from "../../assets/shadows/100.png";
+import shadow_path_40 from "../../assets/shadows/40.png";
+import shadow_path_60 from "../../assets/shadows/60.png";
+import shadow_path_60hhkb from "../../assets/shadows/60hhkb.png";
+import shadow_path_60iso from "../../assets/shadows/60iso.png";
+import shadow_path_60wkl from "../../assets/shadows/60wkl.png";
+import shadow_path_65 from "../../assets/shadows/65.png";
+import shadow_path_75 from "../../assets/shadows/75.png";
+import shadow_path_80 from "../../assets/shadows/80.png";
+import shadow_path_95 from "../../assets/shadows/95.png";
+import shadow_path_leftnum from "../../assets/shadows/leftnum.png";
+import shadow_path_numpad from "../../assets/shadows/numpad.png";
+import shadow_path_40ortho from "../../assets/shadows/40ortho.png";
+import shadow_path_50ortho from "../../assets/shadows/50ortho.png";
+
 import nx from "../../assets/dist/nx.jpg";
 import ny from "../../assets/dist/ny.jpg";
 import nz from "../../assets/dist/nz.jpg";
@@ -48,7 +51,8 @@ const shadow_paths = {
   shadow_path_95,
   shadow_path_leftnum,
   shadow_path_numpad,
-  shadow_path_ortho,
+  shadow_path_40ortho,
+  shadow_path_50ortho,
 };
 
 const MATERIAL_OPTIONS = {
