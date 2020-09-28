@@ -6,6 +6,8 @@ export default function ScreenShot() {
   const [visible, setVisible] = useState(false);
   return (
     <div
+      role="button"
+      aria-label="take screenshot"
       className={styles.action}
       onMouseEnter={() => {
         setVisible(true);

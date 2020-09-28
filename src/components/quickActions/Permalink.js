@@ -20,6 +20,7 @@ export default function PermalinkButton() {
   return (
     <div
       id="permalink"
+      role="button"
       aria-label={message}
       onClick={copyPermalink}
       className={styles.action}

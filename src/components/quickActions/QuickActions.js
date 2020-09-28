@@ -12,6 +12,7 @@ export default function QuickActions() {
       <a
         className={styles.action}
         href="https://github.com/crsnbrt/keysim"
+        aria-label="keyboard simulator on github"
         target="_blank"
       >
         <GithubIcon />

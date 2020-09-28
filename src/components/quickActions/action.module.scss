@@ -7,6 +7,15 @@
   z-index: 10;
   left: 21em !important;
   top: 1em !important;
+
+  @media screen and (max-width: $break) {
+    background: black;
+    justify-content: center;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    order: -1;
+  }
 }
 
 .action {

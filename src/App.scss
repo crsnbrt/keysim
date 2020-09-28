@@ -110,6 +110,7 @@
 
   @media screen and (max-width: $break) {
     flex-direction: column;
+    align-items: center;
     overflow: initial;
     display: flex;
     #canvas-wrapper {
@@ -120,9 +121,6 @@
     }
     > div {
       position: relative;
-    }
-    #permalink {
-      display: none !important;
     }
   }
 }
