@@ -9,6 +9,12 @@
     height: 100%;
     padding: 0 1em !important;
   }
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button,
+  input::-webkit-search-results-button,
+  input::-webkit-search-results-decoration {
+    display: none;
+  }
   svg {
     top: 50%;
     width: 20px;

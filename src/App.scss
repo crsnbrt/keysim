@@ -16,13 +16,6 @@
   h5 {
     margin-top: 0;
   }
-  a {
-    color: var(--accent);
-    &:focus,
-    &:hover {
-      color: white;
-    }
-  }
   svg {
     min-width: 20px;
   }
@@ -117,6 +110,7 @@
 
   @media screen and (max-width: $break) {
     flex-direction: column;
+    align-items: center;
     overflow: initial;
     display: flex;
     #canvas-wrapper {
@@ -127,9 +121,6 @@
     }
     > div {
       position: relative;
-    }
-    #permalink {
-      display: none !important;
     }
   }
 }

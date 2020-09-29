@@ -53,4 +53,13 @@ export default class ThreeUtil {
       options.color
     );
   }
+
+  static getSceneScreenshot(renderer) {
+    let data = renderer.domElement.toDataURL();
+    let image = document.createElement("img");
+    image.src = data;
+    let w = window.open("about:blank");
+    w.document.write(image.outerHTML);
+    w.document.close();
+  }
 }

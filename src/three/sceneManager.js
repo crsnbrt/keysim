@@ -3,11 +3,13 @@ import Collection from "./collection";
 import { subscribe } from "redux-subscriber";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { enableHighlight, disableHighlight } from "./key/materials";
+import ThreeUtil from "../util/three";
 //import { CSS3DRenderer } from "three/examples/jsm/renderers/CSS3DRenderer.js";
 
 export default class SceneManager extends Collection {
   constructor(options) {
     super();
+    this.takeScreenshot = false;
     this.options = options || {};
     this.editing = false;
     this.scale = options.scale || 1;
@@ -53,6 +55,13 @@ export default class SceneManager extends Collection {
       },
       false
     );
+    document.addEventListener(
+      "screenshot",
+      () => {
+        this.takeScreenshot = true;
+      },
+      false
+    );
 
     //some helpers for reading and setting orbit controls position / taking screenshots
     document.addEventListener("keydown", (e) => {
@@ -66,12 +75,9 @@ export default class SceneManager extends Collection {
         this.camera.position.set(-7, 8, 9);
         this.controls.target.set(-3, -2, 1);
       }
-      // if (e.key === "F3") {
-      //   let image = this.renderer.domElement.toDataURL();
-      //   let imgNode = document.createElement("img");
-      //   imgNode.src = image;
-      //   document.body.appendChild(imgNode);
-      // }
+      if (e.key === "F3") {
+        this.takeScreenshot = true;
+      }
     });
 
     subscribe("colorways.editing", (state) => {
@@ -92,8 +98,6 @@ export default class SceneManager extends Collection {
     this.camera.aspect = this.w / this.h;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(this.w, this.h);
-    // this.composer.setSize(this.w, this.h);
-    // this.cssRenderer.setSize(this.w, this.h);
   }
   setupCamera() {
     this.camera = new THREE.PerspectiveCamera(60, this.w / this.h, 1, 1000);
@@ -197,6 +201,10 @@ export default class SceneManager extends Collection {
   }
   tick() {
     this.render();
+    if (this.takeScreenshot) {
+      ThreeUtil.getSceneScreenshot(this.renderer);
+      this.takeScreenshot = false;
+    }
     requestAnimationFrame(this.tick.bind(this));
   }
 }
