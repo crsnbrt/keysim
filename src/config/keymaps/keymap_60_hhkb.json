@@ -15,7 +15,8 @@
       "KC_0",
       "KC_MINS",
       "KC_EQL",
-      "KC_BSPC",
+      "KC_NUBS",
+      "KC_GRV",
       "KC_TAB",
       "KC_Q",
       "KC_W",
@@ -55,12 +56,12 @@
       "KC_DOT",
       "KC_SLSH",
       "KC_RSFT",
-      "KC_LCTL",
+      "MO(1)",
       "KC_LALT",
+      "KC_LCTL",
       "KC_SPC",
       "KC_RALT",
-      "KC_RGUI",
-      "MO(1)"
+      "KC_RGUI"
     ]
   ]
 }
