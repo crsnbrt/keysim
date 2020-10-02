@@ -7,6 +7,7 @@ import greek from "./greek.json";
 import hebrew from "./hebrew.json";
 import chinese from "./chinese.json";
 import devanagari from "./devanagari.json";
+import czech from "./czech.json";
 
 const SUBS = {
   arabic: arabic,
@@ -18,6 +19,7 @@ const SUBS = {
   hiragana: hiragana,
   katakana: katakana,
   devanagari: devanagari,
+  czech: czech,
 };
 
 export default SUBS;

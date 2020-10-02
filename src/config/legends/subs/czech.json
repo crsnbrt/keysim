@@ -1,0 +1,26 @@
+{
+  "fontFamily": "system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,\"Helvetica Neue\", sans-serif",
+  "fontSizeMultiplier": 1,
+  "chars": {
+    "KC_1": "+",
+    "KC_2": "ě",
+    "KC_3": "š",
+    "KC_4": "č",
+    "KC_5": "ř",
+    "KC_6": "ž",
+    "KC_7": "ý",
+    "KC_8": "á",
+    "KC_9": "í",
+    "KC_0": "é",
+    "KC_Y": "Z",
+    "KC_Z": "Y",
+    "KC_LBRC": "ú",
+    "KC_RBRC": ")",
+    "KC_MINS": "=",
+    "KC_EQL": "'",
+    "KC_SCLN": "ů",
+    "KC_QUOTE": "§",
+    "KC_BSLS": "¨",
+    "KC_SLSH": "-"
+  }
+}

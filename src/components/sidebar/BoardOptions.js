@@ -83,6 +83,7 @@ export default function BoardOptions() {
             { label: "Arabic", value: "arabic" },
             { label: "Chinese", value: "chinese" },
             { label: "Cyrillic", value: "cyrillic" },
+            { label: "Czech", value: "czech" },
             { label: "Devanagari", value: "devanagari" },
             { label: "Greek", value: "greek" },
             { label: "Hangul", value: "hangul" },
