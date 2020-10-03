@@ -9,7 +9,7 @@ export default (element) => {
   //ensure fonts loaded for canvas textures
   webfont.load({
     custom: {
-      families: ["legends", "Varela Round"],
+      families: ["legends", "Varela Round", "Victor Mono"],
     },
     active: function () {
       //MAIN THREE JS SETUP

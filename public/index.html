@@ -37,6 +37,23 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
+    <style>
+      @font-face {
+        font-family: "Victor Mono";
+        src: url(https://cdn.jsdelivr.net/npm/victormono@latest/dist/woff2/VictorMono-Bold.woff2) format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap
+      }
+
+      @font-face {
+        font-family: "Victor Mono";
+        src: url(https://cdn.jsdelivr.net/npm/victormono@latest/dist/woff2/VictorMono-BoldItalic.woff2) format("woff2");
+        font-weight: 700;
+        font-style: italic;
+        font-display: swap
+      }
+    </style>
     <link
       crossorigin="use-credentials"
       rel="manifest"
@@ -167,6 +184,7 @@
       </div>
     </noscript>
     <main>
+      <div style="font-family: 'Victor Mono'; font-style: italic;" />
       <div id="root"></div>
       <div id="portal"></div>
     </main>

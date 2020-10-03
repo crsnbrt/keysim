@@ -69,6 +69,11 @@ export default function BoardOptions() {
           options={[
             { label: "Cherry", value: "cherry" },
             { label: "SA", value: "sa", secondaryLabel: "(no subs)" },
+            {
+              label: "Victor Mono Mac",
+              value: "vmm",
+              secondaryLabel: "(no subs)",
+            },
           ]}
           handler={(val) => {
             dispatch(keyActions.setLegendPrimaryStyle(val));

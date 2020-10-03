@@ -104,6 +104,9 @@ export const keyTexture = (opts) => {
       ? String.fromCharCode(parseInt(mainChar, 16))
       : mainChar;
 
+  //italics, possibly
+  const nonModStyle = l.nonModStyle || ``;
+
   //font size
   let fontScaler = 1;
   if (mainChar["top"]) fontScaler = 1 / 2; //number keys 2 characters stacked
@@ -114,7 +117,7 @@ export const keyTexture = (opts) => {
   if (modWord) {
     ctx.font = `700 ${fontSize}px ${l.fontFamily}`;
   } else {
-    ctx.font = `${fontSize}px ${l.fontFamily}`;
+    ctx.font = `${nonModStyle} ${fontSize}px ${l.fontFamily}`;
   }
   ctx.fillStyle = fg;
 
