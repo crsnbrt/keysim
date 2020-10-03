@@ -46,10 +46,10 @@ export const MyPicker = ({ hex, hsl, hsv, onChange, onClose }) => {
 
   useEffect(() => {
     setTimeout(() => {
-      node.current.querySelector("input").focus();
+      if (node.current) node.current.querySelector("input").focus();
     }, 50);
     return onClose;
-  });
+  }, []);
 
   const swatches = Object.keys(colorCodes).map((code) => {
     return (

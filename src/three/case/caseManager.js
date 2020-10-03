@@ -58,10 +58,11 @@ const shadow_paths = {
 const MATERIAL_OPTIONS = {
   matte: {
     metalness: 0,
-    roughness: 0.8,
-    clearcoat: 0.5,
-    aoMapIntensity: 0.2,
-    clearcoatRoughness: 0.3,
+    roughness: 1,
+    clearcoat: 0,
+    aoMapIntensity: 0.1,
+    clearcoatRoughness: 1,
+    lightMapIntensity: 0.2,
   },
   brushed: {
     metalness: 0.4,
@@ -282,10 +283,12 @@ export default class CaseManager {
   updateCaseMaterial(color = this.color, finish = this.finish) {
     let materials = [];
     let options = MATERIAL_OPTIONS[finish];
-    options.roughnessMap = this.roughnessMap;
-    options.envMap = this.cubemap;
-    options.map = this.albedoMap;
     options.lightMap = this.ao;
+    if (finish !== "matte") {
+      options.envMap = this.cubemap;
+      options.roughnessMap = this.roughnessMap;
+      options.map = this.albedoMap;
+    }
     //create materials
     let materialPrimary = new THREE.MeshPhysicalMaterial(
       Object.assign(

@@ -3,7 +3,7 @@ import LEGENDS from "../../config/legends/primary/primary";
 import SUBS from "../../config/legends/subs/subs";
 import KeyUtil from "../../util/keyboard";
 
-const MIP_COUNT = 1;
+const MIP_COUNT = 0;
 
 //genertates a texture with canvas for top of key
 export const keyTexture = (opts) => {
@@ -107,7 +107,7 @@ export const keyTexture = (opts) => {
   //font size
   let fontScaler = 1;
   if (mainChar["top"]) fontScaler = 1 / 2; //number keys 2 characters stacked
-  if (!mainChar["top"] && modWord) fontScaler = 2 / 5; // keys with full words for modifer text i.e. "Enter", "Alt", "Home"
+  if (!mainChar["top"] && modWord) fontScaler = 1 / 4; // keys with full words for modifer text i.e. "Enter", "Alt", "Home"
   let fontSize = l.fontsize * (fontScaler + 0.25);
 
   //set font style
@@ -132,13 +132,13 @@ export const keyTexture = (opts) => {
   }
 
   if (mainChar["top"]) {
-    ctx.fillText(mainChar.top, l.offsetX, l.offsetY + 30);
-    ctx.fillText(mainChar.bottom, l.offsetX, l.offsetY + 70);
+    ctx.fillText(mainChar.top, l.offsetX, l.offsetY + l.yOffsetTop);
+    ctx.fillText(mainChar.bottom, l.offsetX, l.offsetY + l.yOffsetBottom);
   } else {
     ctx.fillText(
       mainChar,
       l.offsetX + ent_off_x,
-      l.fontsize + (KeyUtil.isAlpha(key) ? l.offsetY : 25) + ent_off_y
+      l.fontsize + (KeyUtil.isAlpha(key) ? l.offsetY : l.yOffsetMod) + ent_off_y
     );
   }
 

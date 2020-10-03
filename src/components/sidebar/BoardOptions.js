@@ -20,21 +20,21 @@ import icon60wkl from "../../assets/icons/icon-60-wkl.png";
 import icon60hhkb from "../../assets/icons/icon-60-hhkb.png";
 
 import * as caseActions from "../../store/slices/case";
-//import * as settingsActions from "../../store/slices/settings";
+import * as settingsActions from "../../store/slices/settings";
 import * as keyActions from "../../store/slices/keys";
 
 export default function BoardOptions() {
   const dispatch = useDispatch();
 
   const layout = useSelector(caseActions.selectLayout);
-  //const legendPrimaryStyle = useSelector(keyActions.selectLegendPrimaryStyle);
+  const legendPrimaryStyle = useSelector(keyActions.selectLegendPrimaryStyle);
   const legendSecondaryStyle = useSelector(
     keyActions.selectLegendSecondaryStyle
   );
   const primaryColor = useSelector(caseActions.selectPrimaryColor);
   const style = useSelector(caseActions.selectStyle);
   const material = useSelector(caseActions.selectMaterial);
-  //const sceneColor = useSelector(settingsActions.selectSceneColor);
+  const sceneColor = useSelector(settingsActions.selectSceneColor);
 
   return (
     <>
@@ -63,17 +63,17 @@ export default function BoardOptions() {
           }}
         />
 
-        {/* <SelectField
+        <SelectField
           label="Legend Style"
           selected={legendPrimaryStyle}
           options={[
             { label: "Cherry", value: "cherry" },
-            { label: "SA", value: "sa" },
+            { label: "SA", value: "sa", secondaryLabel: "(no subs)" },
           ]}
           handler={(val) => {
             dispatch(keyActions.setLegendPrimaryStyle(val));
           }}
-        /> */}
+        />
 
         <SelectField
           label="Sub Legends"
@@ -83,6 +83,7 @@ export default function BoardOptions() {
             { label: "Arabic", value: "arabic" },
             { label: "Chinese", value: "chinese" },
             { label: "Cyrillic", value: "cyrillic" },
+            { label: "Czech", value: "czech" },
             { label: "Devanagari", value: "devanagari" },
             { label: "Greek", value: "greek" },
             { label: "Hangul", value: "hangul" },
@@ -136,7 +137,7 @@ export default function BoardOptions() {
             />
           </div>
 
-          {/* <div className={styles.fieldColor}>
+          <div className={styles.fieldColor}>
             <label>Scene Color</label>
             <ColorPicker
               color={sceneColor}
@@ -145,7 +146,7 @@ export default function BoardOptions() {
                 dispatch(settingsActions.setSceneAutoColor(false));
               }}
             />
-          </div> */}
+          </div>
         </div>
       </CollapsibleSection>
     </>
