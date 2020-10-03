@@ -27,7 +27,7 @@ export default function BoardOptions() {
   const dispatch = useDispatch();
 
   const layout = useSelector(caseActions.selectLayout);
-  //const legendPrimaryStyle = useSelector(keyActions.selectLegendPrimaryStyle);
+  const legendPrimaryStyle = useSelector(keyActions.selectLegendPrimaryStyle);
   const legendSecondaryStyle = useSelector(
     keyActions.selectLegendSecondaryStyle
   );
@@ -63,17 +63,17 @@ export default function BoardOptions() {
           }}
         />
 
-        {/* <SelectField
+        <SelectField
           label="Legend Style"
           selected={legendPrimaryStyle}
           options={[
             { label: "Cherry", value: "cherry" },
-            { label: "SA", value: "sa" },
+            { label: "SA", value: "sa", secondaryLabel: "(no subs)" },
           ]}
           handler={(val) => {
             dispatch(keyActions.setLegendPrimaryStyle(val));
           }}
-        /> */}
+        />
 
         <SelectField
           label="Sub Legends"
