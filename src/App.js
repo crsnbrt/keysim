@@ -15,6 +15,10 @@ export default function App() {
   const highContrast = useSelector(settingsActions.selectHighContrast);
 
   const getAccent = () => {
+    return ColorUtil.getUiAccent(colorway_id);
+  };
+
+  const getSceneColor = () => {
     return sceneAutoColor ? ColorUtil.getUiAccent(colorway_id) : sceneColor;
   };
 
@@ -26,6 +30,7 @@ export default function App() {
     "--light-2": "#9c9ca7",
     "--light-3": "#e0e0e3",
     "--accent": getAccent(),
+    "--sceneColor": getSceneColor(),
     "--accent-transparent": ColorUtil.getTransparentColor(getAccent()),
     "--compliment": ColorUtil.getUiCompliment(colorway_id),
     "--accent-text": ColorUtil.getUiAccentText(colorway_id),
@@ -39,6 +44,7 @@ export default function App() {
     "--light-2": "#cccccc",
     "--light-3": "#ffffff",
     "--accent": getAccent(),
+    "--sceneColor": getSceneColor(),
     "--accent-transparent": ColorUtil.getTransparentColor(getAccent()),
     "--compliment": ColorUtil.getUiCompliment(colorway_id),
     "--accent-text": "#000000",

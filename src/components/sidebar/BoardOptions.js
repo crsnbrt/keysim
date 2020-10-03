@@ -20,7 +20,7 @@ import icon60wkl from "../../assets/icons/icon-60-wkl.png";
 import icon60hhkb from "../../assets/icons/icon-60-hhkb.png";
 
 import * as caseActions from "../../store/slices/case";
-//import * as settingsActions from "../../store/slices/settings";
+import * as settingsActions from "../../store/slices/settings";
 import * as keyActions from "../../store/slices/keys";
 
 export default function BoardOptions() {
@@ -34,7 +34,7 @@ export default function BoardOptions() {
   const primaryColor = useSelector(caseActions.selectPrimaryColor);
   const style = useSelector(caseActions.selectStyle);
   const material = useSelector(caseActions.selectMaterial);
-  //const sceneColor = useSelector(settingsActions.selectSceneColor);
+  const sceneColor = useSelector(settingsActions.selectSceneColor);
 
   return (
     <>
@@ -137,7 +137,7 @@ export default function BoardOptions() {
             />
           </div>
 
-          {/* <div className={styles.fieldColor}>
+          <div className={styles.fieldColor}>
             <label>Scene Color</label>
             <ColorPicker
               color={sceneColor}
@@ -146,7 +146,7 @@ export default function BoardOptions() {
                 dispatch(settingsActions.setSceneAutoColor(false));
               }}
             />
-          </div> */}
+          </div>
         </div>
       </CollapsibleSection>
     </>

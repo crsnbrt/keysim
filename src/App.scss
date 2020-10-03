@@ -97,7 +97,7 @@
     z-index: 1;
     cursor: grab;
     background-color: var(--main);
-    background-color: var(--accent);
+    background-color: var(--sceneColor);
     &:active {
       cursor: grabbing;
     }
