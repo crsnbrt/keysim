@@ -6,6 +6,9 @@
   "encoded": true,
   "offsetX": 20,
   "offsetY": 25,
+  "yOffsetTop": 30,
+  "yOffsetBottom": 70,
+  "yOffsetMod": 25,
   "fontsize": 80,
   "chars": {
     "KC_0": "e900",

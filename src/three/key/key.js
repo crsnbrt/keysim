@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import KeyUtil from "../../util/keyboard";
 import ColorUtil from "../../util/color";
+import store from "../../store/store";
 import { subscribe } from "redux-subscriber";
 import { initial_settings } from "../../store/startup";
 import {
@@ -32,7 +33,7 @@ export class Key {
     this.start_y = -0.05; // initial y position and reset after releasing key
     this.dist_pressed = 0.25; // max vertical distance the key can be pressed down
     this.press_velocity = 0.1; // speed of press, smaller = smoother slower motion
-    this.legend = initial_settings.keys.legendPrimaryStyle || "cherry";
+    this.legend = store.getState().keys.legendPrimaryStyle || "cherry";
     this.sub = initial_settings.keys.legendSecondaryStyle || "";
     this.testing = initial_settings.settings.testing || false;
     this.setup();
@@ -79,6 +80,7 @@ export class Key {
 
     subscribe("keys.legendPrimaryStyle", (state) => {
       this.legend = state.keys.legendPrimaryStyle;
+      this.updateColors();
     });
 
     subscribe("colorways.active", (state) => {
