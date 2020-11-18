@@ -151,20 +151,6 @@ export default function ColorwayEditor() {
           </fieldset>
         </div>
       </CollapsibleSection>
-
-      <CollapsibleSection title="Advanced">
-        <div className={styles.json}>
-          <label htmlFor="colorway_json">Colorway JSON</label>
-          <textarea
-            readonly
-            id="colorway_json"
-            name="colorway_json"
-            spellCheck="false"
-            value={JSON.stringify(colorway, null, 1)}
-            //onChange={updateColorwayFromJson}
-          />
-        </div>
-      </CollapsibleSection>
     </>
   );
 }

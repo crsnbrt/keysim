@@ -85,6 +85,15 @@ export const updateMaterials = (mesh, opts) => {
   setKeyMaterialState(mesh, KEY_MATERIAL_STATES.DEFAULT, opts.isIsoEnt);
 };
 
+export const updateActiveMaterials = (mesh, opts) => {
+  opts.color = initial_settings.keys.activeColor;
+  opts.background = initial_settings.keys.activeBackground;
+  let active = getMaterialSet(opts);
+  mesh.material[0] = active[0];
+  mesh.material[1] = active[1];
+  setKeyMaterialState(mesh, KEY_MATERIAL_STATES.DEFAULT, opts.isIsoEnt);
+};
+
 //simulate highlighting by toggling lightmap intensity
 export const enableHighlight = (key_mesh, layer) => {
   key_mesh.material.forEach((m) => (m.lightMapIntensity = 0.2));

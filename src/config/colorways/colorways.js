@@ -1,4 +1,7 @@
 //IMPORT
+import colorway_night_sakura from './colorway_night_sakura.json';
+import colorway_blacklight from './colorway_blacklight.json';
+import colorway_amalfi from './colorway_amalfi.json';
 import colorway_wob from "./colorway_wob.json";
 import colorway_bow from "./colorway_bow.json";
 import colorway_8008 from "./colorway_8008.json";
@@ -55,6 +58,9 @@ import colorway_nuclear_data from "./colorway_nuclear_data.json";
 
 const COLORWAYS = {
   //APPEND
+  night_sakura: colorway_night_sakura,
+  blacklight: colorway_blacklight,
+  amalfi: colorway_amalfi,
   wob: colorway_wob,
   bow: colorway_bow,
   nautilus: colorway_nautilus,

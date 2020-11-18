@@ -1,0 +1,29 @@
+{
+  "id": "amalfi",
+  "label": "Amalfi",
+  "manufacturer": "Infinikey",
+  "designer": "NathanAlphaMan",
+  "swatches": {
+    "base": {
+      "background": "#98C1D2",
+      "color": "#F6FCFE"
+    },
+    "mods": {
+      "background": "#F6FCFE",
+      "color": "#98C1D2"
+    },
+    "accent": {
+      "background": "#EA7D78",
+      "color": "#F6FCFE"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent",
+    "KC_F5": "mods",
+    "KC_F6": "mods",
+    "KC_F7": "mods",
+    "KC_F8": "mods"
+  }
+}
