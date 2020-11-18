@@ -9,6 +9,7 @@ import {
   setKeyMaterialState,
   KEY_MATERIAL_STATES,
   updateMaterials,
+  updateActiveMaterials,
 } from "./materials";
 import { keyGeometry, keyGeometryISOEnter } from "./geometry";
 
@@ -81,7 +82,7 @@ export class Key {
 
     subscribe("keys.legendPrimaryStyle", (state) => {
       this.legend = state.keys.legendPrimaryStyle;
-      this.updateColors();
+      this.updateColors(false, true);
     });
 
     subscribe("colorways.active", (state) => {
@@ -182,9 +183,11 @@ export class Key {
       this.queueRelease = false;
     }
   }
-  updateColors(textureOnly) {
+  updateColors(textureOnly, includeActiveMaterial) {
     this.colorway = ColorUtil.colorway;
     updateMaterials(this.cap, this.materialOptions, textureOnly);
+    if (!includeActiveMaterial) return;
+    updateActiveMaterials(this.cap, this.materialOptions, textureOnly);
   }
   // update key
   update() {
