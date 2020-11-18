@@ -19,7 +19,7 @@ export default function App() {
   };
 
   const getSceneColor = () => {
-    return sceneAutoColor ? ColorUtil.getUiAccent(colorway_id) : sceneColor;
+    return sceneAutoColor ? ColorUtil.getAccent(colorway_id) : sceneColor;
   };
 
   const uiColors = {
