@@ -1,0 +1,30 @@
+{
+  "id": "port",
+  "label": "Port",
+  "manufacturer": "Infinikey",
+  "designer": "Ashkeebs",
+  "swatches": {
+    "base": {
+      "background": "#FDF8E1",
+      "color": "#6d1b40"
+    },
+    "mods": {
+      "background": "#6d1b40",
+      "color": "#FDF8E1"
+    },
+    "accent": {
+      "background": "#CCAB7A",
+      "color": "#6d1b40"
+    }
+  },
+  "override": {
+    "KC_ENT": "mods",
+    "KC_ESC": "mods",
+    "KC_GESC": "accent",
+    "KC_F5": "mods",
+    "KC_F6": "mods",
+    "KC_F7": "mods",
+    "KC_F8": "mods",
+    "KC_SPC": "base"
+  }
+}
