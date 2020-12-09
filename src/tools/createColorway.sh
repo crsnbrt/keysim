@@ -1,5 +1,5 @@
 if [ $# -lt 2 ]; then
-    echo "not enough args" 
+    echo "not enough args"
     exit 1
 fi
 
@@ -7,7 +7,7 @@ fi
 cd ../config/colorways
 echo "creating colorway: $1"
 
-if grep -Fqe "$1" colorways.js
+if grep -Fqe "colorway_${1}" colorways.js
 then
     echo "colorway already exists"
     exit 1
