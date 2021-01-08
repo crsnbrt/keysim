@@ -1,10 +1,12 @@
 //IMPORT
+import colorway_port from './colorway_port.json';
 import colorway_night_sakura from './colorway_night_sakura.json';
 import colorway_blacklight from './colorway_blacklight.json';
 import colorway_amalfi from './colorway_amalfi.json';
 import colorway_wob from "./colorway_wob.json";
 import colorway_bow from "./colorway_bow.json";
 import colorway_8008 from "./colorway_8008.json";
+import colorway_80082 from "./colorway_80082.json";
 import colorway_9009 from "./colorway_9009.json";
 import colorway_bento from "./colorway_bento.json";
 import colorway_olivia from "./colorway_olivia.json";
@@ -58,6 +60,7 @@ import colorway_nuclear_data from "./colorway_nuclear_data.json";
 
 const COLORWAYS = {
   //APPEND
+  port: colorway_port,
   night_sakura: colorway_night_sakura,
   blacklight: colorway_blacklight,
   amalfi: colorway_amalfi,
@@ -65,6 +68,7 @@ const COLORWAYS = {
   bow: colorway_bow,
   nautilus: colorway_nautilus,
   "8008": colorway_8008,
+  "80082": colorway_80082,
   dmg: colorway_dmg,
   night_runner: colorway_night_runner,
   "9009": colorway_9009,
