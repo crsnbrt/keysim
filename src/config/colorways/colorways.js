@@ -6,6 +6,7 @@ import colorway_amalfi from './colorway_amalfi.json';
 import colorway_wob from "./colorway_wob.json";
 import colorway_bow from "./colorway_bow.json";
 import colorway_8008 from "./colorway_8008.json";
+import colorway_80082 from "./colorway_80082.json";
 import colorway_9009 from "./colorway_9009.json";
 import colorway_bento from "./colorway_bento.json";
 import colorway_olivia from "./colorway_olivia.json";
@@ -67,6 +68,7 @@ const COLORWAYS = {
   bow: colorway_bow,
   nautilus: colorway_nautilus,
   "8008": colorway_8008,
+  "80082": colorway_80082,
   dmg: colorway_dmg,
   night_runner: colorway_night_runner,
   "9009": colorway_9009,
