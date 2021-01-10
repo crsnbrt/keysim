@@ -22,6 +22,7 @@
   },
   "override": {
     "KC_SPC": "accent2",
+    "KC_PENT": "accent2",
     "KC_ENT": "accent",
     "KC_ESC": "accent",
     "KC_GESC": "accent",

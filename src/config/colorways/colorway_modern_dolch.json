@@ -23,7 +23,12 @@
   "override": {
     "KC_SPC": "base",
     "KC_ENT": "accent2",
+    "KC_PENT": "accent",
     "KC_ESC": "accent",
-    "KC_GESC": "accent"
+    "KC_GESC": "accent",
+    "KC_F5": "mods",
+    "KC_F6": "mods",
+    "KC_F7": "mods",
+    "KC_F8": "mods"
   }
 }
