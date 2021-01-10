@@ -1,0 +1,26 @@
+{
+  "id": "noire",
+  "label": "Noire",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#171718",
+      "color": "#e3d9c6"
+    },
+    "mods": {
+      "background": "#171718",
+      "color": "#e3d9c6"
+    },
+    "accent": {
+      "background": "#e3d9c6",
+      "color": "#171718"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_PENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

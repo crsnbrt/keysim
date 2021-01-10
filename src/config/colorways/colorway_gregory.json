@@ -1,0 +1,65 @@
+{
+  "id": "gregory",
+  "label": "Gregory",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#f8c200",
+      "color": "#171718"
+    },
+    "mods": {
+      "background": "#f8c200",
+      "color": "#171718"
+    },
+    "accent": {
+      "background": "#c87e74",
+      "color": "#171718"
+    },
+    "accent2": {
+      "background": "#f7f2ea",
+      "color": "#171718"
+    },
+    "accent3": {
+      "background": "#2a2a2a",
+      "color": "#393b3b"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_CAPS": "accent",
+    "KC_F1": "accent2",
+    "KC_F2": "accent2",
+    "KC_F3": "accent2",
+    "KC_F4": "accent2",
+    "KC_F8": "accent2",
+    "KC_F9": "accent2",
+    "KC_F10": "accent2",
+    "KC_F11": "accent2",
+    "KC_1": "accent2",
+    "KC_2": "accent2",
+    "KC_5": "accent2",
+    "KC_9": "accent2",
+    "KC_0": "accent2",
+    "KC_BSPC": "accent2",
+    "KC_Q": "accent2",
+    "KC_W": "accent2",
+    "KC_E": "accent2",
+    "KC_R": "accent2",
+    "KC_O": "accent2",
+    "KC_P": "accent2",
+    "KC_LBRC": "accent2",
+    "KC_RBRC": "accent2",
+    "KC_3": "accent3",
+    "KC_4": "accent3",
+    "KC_MINS": "accent3",
+    "KC_EQL": "accent3",
+    "KC_G": "accent3",
+    "KC_H": "accent3",
+    "KC_Z": "accent3",
+    "KC_B": "accent3",
+    "KC_SLSH": "accent3",
+    "KC_LALT": "accent3",
+    "KC_SPC": "accent3",
+    "KC_RALT": "accent3"
+  }
+}

@@ -1,8 +1,10 @@
 //IMPORT
-import colorway_port from './colorway_port.json';
-import colorway_night_sakura from './colorway_night_sakura.json';
-import colorway_blacklight from './colorway_blacklight.json';
-import colorway_amalfi from './colorway_amalfi.json';
+import colorway_aurora_polaris from "./colorway_aurora_polaris.json";
+import colorway_port from "./colorway_port.json";
+import colorway_night_sakura from "./colorway_night_sakura.json";
+import colorway_blacklight from "./colorway_blacklight.json";
+import colorway_botanical from "./colorway_botanical.json";
+import colorway_amalfi from "./colorway_amalfi.json";
 import colorway_wob from "./colorway_wob.json";
 import colorway_bow from "./colorway_bow.json";
 import colorway_8008 from "./colorway_8008.json";
@@ -24,12 +26,15 @@ import colorway_hammerhead from "./colorway_hammerhead.json";
 import colorway_metropolis from "./colorway_metropolis.json";
 import colorway_bushido from "./colorway_bushido.json";
 import colorway_1976 from "./colorway_1976.json";
+import colorway_serika from "./colorway_serika.json";
 import colorway_skeletor from "./colorway_skeletor.json";
+import colorway_noire from "./colorway_noire.json";
 import colorway_nord from "./colorway_nord.json";
 import colorway_bread from "./colorway_bread.json";
 import colorway_nautilus_nightmares from "./colorway_nautilus_nightmares.json";
 import colorway_cafe from "./colorway_cafe.json";
 import colorway_jamon from "./colorway_jamon.json";
+import colorway_minimal from "./colorway_minimal.json";
 import colorway_mizu from "./colorway_mizu.json";
 import colorway_striker from "./colorway_striker.json";
 import colorway_pastel from "./colorway_pastel.json";
@@ -43,6 +48,7 @@ import colorway_blue_samurai from "./colorway_blue_samurai.json";
 import colorway_vilebloom from "./colorway_vilebloom.json";
 import colorway_milkshake from "./colorway_milkshake.json";
 import colorway_peaches_cream from "./colorway_peaches_cream.json";
+import colorway_pono from "./colorway_pono.json";
 import colorway_ashes from "./colorway_ashes.json";
 import colorway_kaiju from "./colorway_kaiju.json";
 import colorway_handarbeit from "./colorway_handarbeit.json";
@@ -57,21 +63,25 @@ import colorway_hyperfuse from "./colorway_hyperfuse.json";
 import colorway_honeywell from "./colorway_honeywell.json";
 import colorway_demonic from "./colorway_demonic.json";
 import colorway_nuclear_data from "./colorway_nuclear_data.json";
+import colorway_finer_things from "./colorway_finer_things.json";
+import colorway_gregory from "./colorway_gregory.json";
 
 const COLORWAYS = {
   //APPEND
+  aurora_polaris: colorway_aurora_polaris,
   port: colorway_port,
   night_sakura: colorway_night_sakura,
   blacklight: colorway_blacklight,
+  botanical: colorway_botanical,
   amalfi: colorway_amalfi,
   wob: colorway_wob,
   bow: colorway_bow,
   nautilus: colorway_nautilus,
-  "8008": colorway_8008,
-  "80082": colorway_80082,
+  8008: colorway_8008,
+  80082: colorway_80082,
   dmg: colorway_dmg,
   night_runner: colorway_night_runner,
-  "9009": colorway_9009,
+  9009: colorway_9009,
   hammerhead: colorway_hammerhead,
   red_samurai: colorway_red_samurai,
   mecha: colorway_mecha,
@@ -84,13 +94,16 @@ const COLORWAYS = {
   carbon: colorway_carbon,
   metropolis: colorway_metropolis,
   bushido: colorway_bushido,
-  "1976": colorway_1976,
+  1976: colorway_1976,
+  serika: colorway_serika,
   skeletor: colorway_skeletor,
+  noire: colorway_noire,
   nord: colorway_nord,
   bread: colorway_bread,
   nautilus_nightmares: colorway_nautilus_nightmares,
   cafe: colorway_cafe,
   jamon: colorway_jamon,
+  minimal: colorway_minimal,
   mizu: colorway_mizu,
   striker: colorway_striker,
   pastel: colorway_pastel,
@@ -104,6 +117,7 @@ const COLORWAYS = {
   vilebloom: colorway_vilebloom,
   milkshake: colorway_milkshake,
   peaches_cream: colorway_peaches_cream,
+  pono: colorway_pono,
   ashes: colorway_ashes,
   kaiju: colorway_kaiju,
   handarbeit: colorway_handarbeit,
@@ -118,6 +132,8 @@ const COLORWAYS = {
   honeywell: colorway_honeywell,
   demonic: colorway_demonic,
   nuclear_data: colorway_nuclear_data,
+  finer_things: colorway_finer_things,
+  gregory: colorway_gregory,
 };
 
 export default COLORWAYS;
