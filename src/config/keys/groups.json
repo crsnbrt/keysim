@@ -125,7 +125,7 @@
     "KC_PAUS"
   ],
   "nav": ["KC_INS", "KC_DEL", "KC_HOME", "KC_END", "KC_PGUP", "KC_PGDN"],
-  "arrows": ["KC_LEFT", "KC_RIGHT", "KC_DOWN", "KC_UP"],
+  "arrows": ["KC_LEFT", "KC_RGHT", "KC_DOWN", "KC_UP"],
   "stabilized": ["KC_BSPC", "KC_ENT", "KC_LSFT", "KC_RSFT", "KC_SPC"],
   "blank": ["KC_SPC"]
 }
