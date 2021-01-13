@@ -1,0 +1,26 @@
+{
+  "id": "aurora_polaris",
+  "label": "Aurora Polaris",
+  "manufacturer": "",
+  "designer": "",
+  "swatches": {
+    "base": {
+      "background": "#171718",
+      "color": "#00b388"
+    },
+    "mods": {
+      "background": "#171718",
+      "color": "#00b388"
+    },
+    "accent": {
+      "background": "#00b388",
+      "color": "#171718"
+    }
+  },
+  "override": {
+    "KC_ENT": "accent",
+    "KC_PENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent"
+  }
+}

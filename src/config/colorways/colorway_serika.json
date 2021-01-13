@@ -1,0 +1,29 @@
+{
+  "id": "serika",
+  "label": "Serika",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#e2e4ce",
+      "color": "#3f4343"
+    },
+    "mods": {
+      "background": "#eec729",
+      "color": "#3f4343"
+    },
+    "accent": {
+      "background": "#3f4343",
+      "color": "#e2e4ce"
+    }
+  },
+  "override": {
+    "KC_SPC": "base",
+    "KC_F5": "mods",
+    "KC_F6": "mods",
+    "KC_F7": "mods",
+    "KC_F8": "mods",
+    "KC_ESC": "accent",
+    "KC_ENT": "accent",
+    "KC_PENT": "accent"
+  }
+}
