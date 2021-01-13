@@ -1,0 +1,20 @@
+{
+  "id": "minimal",
+  "label": "Minimal",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#f7f2ea",
+      "color": "#171718"
+    },
+    "mods": {
+      "background": "#f7f2ea",
+      "color": "#171718"
+    },
+    "accent": {
+      "background": "#f7f2ea",
+      "color": "#171718"
+    }
+  },
+  "override": {}
+}
