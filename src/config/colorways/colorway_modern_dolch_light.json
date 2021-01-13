@@ -1,29 +1,29 @@
 {
-  "id": "modern_dolch",
-  "label": "Modern Dolch",
+  "id": "modern_dolch_light",
+  "label": "Modern Dolch Light",
   "manufacturer": "",
   "swatches": {
     "base": {
-      "background": "#777b7e",
-      "color": "#e7e7e8"
+      "background": "#d0d0ce",
+      "color": "#3f4042"
     },
     "mods": {
-      "background": "#505356",
-      "color": "#e7e7e8"
+      "background": "#a5a5a5",
+      "color": "#3f4042"
     },
     "accent": {
-      "background": "#79d1c7",
-      "color": "#e7e7e8"
+      "background": "#e28f9f",
+      "color": "#3f4042"
     },
     "accent2": {
-      "background": "#ac5160",
-      "color": "#e7e7e8"
+      "background": "#a0c6bc",
+      "color": "#3f4042"
     }
   },
   "override": {
     "KC_SPC": "base",
     "KC_ENT": "accent2",
-    "KC_PENT": "accent",
+    "KC_PENT": "accent2",
     "KC_ESC": "accent",
     "KC_GESC": "accent",
     "KC_F5": "mods",

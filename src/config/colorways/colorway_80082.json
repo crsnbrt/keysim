@@ -17,6 +17,7 @@
     }
   },
   "override": {
+    "KC_SPC": "base",
     "KC_ENT": "accent",
     "KC_ESC": "accent",
     "KC_GESC": "accent",

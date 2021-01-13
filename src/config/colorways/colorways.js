@@ -18,6 +18,7 @@ import colorway_camping from "./colorway_camping.json";
 import colorway_carbon from "./colorway_carbon.json";
 import colorway_taro from "./colorway_taro.json";
 import colorway_mecha from "./colorway_mecha.json";
+import colorway_rainy_day from "./colorway_rainy_day.json";
 import colorway_red_samurai from "./colorway_red_samurai.json";
 import colorway_bobafett from "./colorway_bobafett.json";
 import colorway_dmg from "./colorway_dmg.json";
@@ -27,6 +28,7 @@ import colorway_metropolis from "./colorway_metropolis.json";
 import colorway_bushido from "./colorway_bushido.json";
 import colorway_1976 from "./colorway_1976.json";
 import colorway_serika from "./colorway_serika.json";
+import colorway_shoko from "./colorway_shoko.json";
 import colorway_skeletor from "./colorway_skeletor.json";
 import colorway_noire from "./colorway_noire.json";
 import colorway_nord from "./colorway_nord.json";
@@ -57,7 +59,9 @@ import colorway_yuri from "./colorway_yuri.json";
 import colorway_space_cadet from "./colorway_space_cadet.json";
 import colorway_terminal from "./colorway_terminal.json";
 import colorway_modern_dolch from "./colorway_modern_dolch.json";
+import colorway_modern_dolch_light from "./colorway_modern_dolch_light.json";
 import colorway_miami from "./colorway_miami.json";
+import colorway_muted from "./colorway_muted.json";
 import colorway_laser from "./colorway_laser.json";
 import colorway_hyperfuse from "./colorway_hyperfuse.json";
 import colorway_honeywell from "./colorway_honeywell.json";
@@ -83,6 +87,7 @@ const COLORWAYS = {
   night_runner: colorway_night_runner,
   9009: colorway_9009,
   hammerhead: colorway_hammerhead,
+  rainy_day: colorway_rainy_day,
   red_samurai: colorway_red_samurai,
   mecha: colorway_mecha,
   bento: colorway_bento,
@@ -94,8 +99,9 @@ const COLORWAYS = {
   carbon: colorway_carbon,
   metropolis: colorway_metropolis,
   bushido: colorway_bushido,
-  1976: colorway_1976,
   serika: colorway_serika,
+  "1976": colorway_1976,
+  shoko: colorway_shoko,
   skeletor: colorway_skeletor,
   noire: colorway_noire,
   nord: colorway_nord,
@@ -126,7 +132,9 @@ const COLORWAYS = {
   space_cadet: colorway_space_cadet,
   terminal: colorway_terminal,
   modern_dolch: colorway_modern_dolch,
+  modern_dolch_light: colorway_modern_dolch_light,
   miami: colorway_miami,
+  muted: colorway_muted,
   laser: colorway_laser,
   hyperfuse: colorway_hyperfuse,
   honeywell: colorway_honeywell,
