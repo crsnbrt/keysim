@@ -1,19 +1,19 @@
 {
-  "id": "8008",
-  "label": "8008",
+  "id": "shoko",
+  "label": "Shoko",
   "manufacturer": "",
   "swatches": {
     "base": {
-      "background": "#747e92",
-      "color": "#0e1415"
+      "background": "#dde5ed",
+      "color": "#7a99ac"
     },
     "mods": {
-      "background": "#2b313f",
-      "color": "#da526e"
+      "background": "#7a99ac",
+      "color": "#dde5ed"
     },
     "accent": {
-      "background": "#da526e",
-      "color": "#0e1415"
+      "background": "#8dcbe0",
+      "color": "#dde5ed"
     }
   },
   "override": {

@@ -1,0 +1,34 @@
+{
+  "id": "muted",
+  "label": "Muted",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#cfcfcd",
+      "color": "#242424"
+    },
+    "mods": {
+      "background": "#a4a5a6",
+      "color": "#242424"
+    },
+    "accent": {
+      "background": "#afe7e7",
+      "color": "#242424"
+    },
+    "accent2": {
+      "background": "#c3b2e7",
+      "color": "#242424"
+    }
+  },
+  "override": {
+    "KC_SPC": "accent2",
+    "KC_PENT": "accent2",
+    "KC_ENT": "accent",
+    "KC_ESC": "accent",
+    "KC_GESC": "accent",
+    "KC_F5": "mods",
+    "KC_F6": "mods",
+    "KC_F7": "mods",
+    "KC_F8": "mods"
+  }
+}
