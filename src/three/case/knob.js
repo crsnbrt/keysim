@@ -45,7 +45,7 @@ export default (w, h, color) => {
 };
 
 const createTexture = (w, bg) => {
-  let pxPerU = 128;
+  const pxPerU = 128;
   let canvas = document.createElement("canvas");
   canvas.height = pxPerU * w;
   canvas.width = pxPerU * w;
@@ -57,10 +57,10 @@ const createTexture = (w, bg) => {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   //draw gradient to simulate sculpting
-  let centerX = canvas.width / 2;
-  let centerY = canvas.height / 2;
-  let innerRadius = canvas.height / 2 - 2;
-  let outerRadius = canvas.height / 2;
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
+  const innerRadius = canvas.height / 2 - 2;
+  const outerRadius = canvas.height / 2;
   let gradient;
   gradient = ctx.createRadialGradient(
     centerX,
