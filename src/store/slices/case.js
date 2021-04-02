@@ -32,6 +32,10 @@ export const caseSlice = createSlice({
     setMaterial: (state, action) => {
       state.material = action.payload;
     },
+    setKnobColor: (state, action) => {
+      state.knobColor = action.payload;
+    },
+    //TODO: SET KNOB AUTO COLOUR???
   },
 });
 
@@ -46,6 +50,7 @@ export const {
   setProfile,
   setMaterial,
   setAutoColor,
+  setKnobColor,
 } = caseSlice.actions;
 
 //case
@@ -57,5 +62,6 @@ export const selectBezel = (state) => state.case.bezel;
 export const selectLayout = (state) => state.case.layout;
 export const selectProfile = (state) => state.case.profile;
 export const selectMaterial = (state) => state.case.material;
+export const selectKnobColor = (state) => state.case.knobColor;
 
 export default caseSlice.reducer;

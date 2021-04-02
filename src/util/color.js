@@ -133,6 +133,11 @@ export default class ColorUtil {
     return cw?.case?.color || initial_settings.case.primaryColor;
   }
 
+  static getKnobColor(cw_name) {
+    let cw = this.getColorway(cw_name);
+    return cw?.case?.knobColor || initial_settings.case.knobColor;
+  }
+
   static getColorwayTemplate(i) {
     let cw = JSON.parse(JSON.stringify(colorwayTemplate));
     cw.swatches.accent = ColorUtil.getRandomAccent();

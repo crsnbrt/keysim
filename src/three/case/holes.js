@@ -15,6 +15,15 @@ const getSquarePath = (startx, starty, w, h, gutter) => {
   return path;
 };
 
+const getCirclePath = (startx, starty, radius, gutter) => {
+  gutter = gutter || 0;
+  startx = startx - gutter;
+  starty = starty - gutter;
+  let path = new THREE.Path();
+  path.absarc(startx, starty, radius);
+  return path;
+};
+
 const getPathFromPoints = (startx, starty, points) => {
   let path = new THREE.Path();
   path.moveTo(startx, starty);
@@ -107,6 +116,28 @@ export default (layoutName, layoutJson, bezel) => {
     case "80":
       holes.push(esc, f1, f5, f9, nav, arrows);
       holes.push(getSquarePath(sx, sy + 1.25, 15, 5, gutter));
+      break;
+    case "75knob":
+      holes.push(
+        getPathEsc(sx, sy, gutter),
+        getPathF1(sx + 1.25, sy, gutter),
+        getPathF5(sx + 5.5, sy, gutter),
+        getPathF9(sx + 9.75, sy, gutter),
+        getPathArrows(sx + 13.1, sy + 6.4, gutter),
+        getPathFromPoints(sx, sy + 1.25, [
+          { x: 15, y: 0 },
+          { x: 0, y: 3 },
+          { x: -1, y: 0 },
+          { x: 0, y: 1 },
+          { x: -1, y: 0 },
+          { x: 0, y: 1 },
+          { x: -13, y: 0 },
+          { x: 0, y: -5 },
+        ])
+      );
+      holes.push(getSquarePath(sx + 15.3, sy + 1.25, 1, 4, gutter));
+      holes.push(getSquarePath(sx + 14, sy + 0, 1, 1, gutter));
+      holes.push(getCirclePath(sx + 15.8, sy + 0.5, 0.52, gutter));
       break;
     case "65":
       holes.push(

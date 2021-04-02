@@ -29,6 +29,7 @@ export const getPermalink = () => {
     sub: state.keys.legendSecondaryStyle,
     cf: state.case.material,
     cc: state.case.primaryColor.replace("#", ""),
+    kc: state.case.knobColor.replace("#", ""),
   });
   return link + "?" + query;
 };

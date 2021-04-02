@@ -81,6 +81,9 @@ const getInitialState = () => {
   if (qs && qs["cf"]) {
     initial.case.material = qs["cf"];
   }
+  if (qs && qs["kc"]) {
+    initial.case.knobColor = `#${qs["kc"]}`;
+  }
 
   let accent = "";
   if (qs && typeof qs["colorway"] === "object") {

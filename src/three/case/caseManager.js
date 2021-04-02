@@ -6,6 +6,7 @@ import Util from "../../util/math";
 import case_1 from "./case_1";
 import case_2 from "./case_2";
 import badge from "./badge";
+import knob from "./knob";
 import ColorUtil from "../../util/color";
 import { lightTexture } from "./lightTexture";
 
@@ -24,6 +25,7 @@ import shadow_path_60iso from "../../assets/shadows/60iso.png";
 import shadow_path_60wkl from "../../assets/shadows/60wkl.png";
 import shadow_path_65 from "../../assets/shadows/65.png";
 import shadow_path_75 from "../../assets/shadows/75.png";
+import shadow_path_75knob from "../../assets/shadows/75knob.png";
 import shadow_path_80 from "../../assets/shadows/80.png";
 import shadow_path_95 from "../../assets/shadows/95.png";
 import shadow_path_leftnum from "../../assets/shadows/leftnum.png";
@@ -47,6 +49,7 @@ const shadow_paths = {
   shadow_path_60wkl,
   shadow_path_65,
   shadow_path_75,
+  shadow_path_75knob,
   shadow_path_80,
   shadow_path_95,
   shadow_path_leftnum,
@@ -86,6 +89,7 @@ export default class CaseManager {
     this.style = initial_settings.case.style;
     this.color = initial_settings.case.primaryColor;
     this.finish = initial_settings.case.material;
+    this.knobColor = initial_settings.case.knobColor;
     this.layout = LAYOUTS[this.layoutName];
     this.texScale = 0.1;
     this.bezel = 0.5;
@@ -113,6 +117,7 @@ export default class CaseManager {
     this.createEnvCubeMap();
     this.createCaseShadow();
     this.createBadge();
+    this.createKnob();
     this.createPlate();
     this.createCase();
 
@@ -142,11 +147,17 @@ export default class CaseManager {
       this.updateCaseGeometry();
       this.createCaseShadow();
       this.createBadge();
+      this.createKnob();
       this.createPlate();
     });
 
     subscribe("colorways.active", () => {
       this.updateLightMap();
+    });
+
+    subscribe("case.knobColor", (state) => {
+      this.knobColor = state.case.knobColor;
+      this.createKnob();
     });
   }
 
@@ -223,6 +234,18 @@ export default class CaseManager {
       this.badgeMesh = badge(bw, this.cubemap);
       this.badgeMesh.position.x += bx;
       this.group.add(this.badgeMesh);
+    }
+  }
+
+  createKnob() {
+    if (this.badgeKnob) this.group.remove(this.badgeKnob);
+    if (this.layoutName === "75knob") {
+      let bx = 15.75;
+      let bz = 0.45;
+      this.badgeKnob = knob(0.45, 0.7, this.knobColor);
+      this.badgeKnob.position.x += bx;
+      this.badgeKnob.position.z += bz;
+      this.group.add(this.badgeKnob);
     }
   }
 
