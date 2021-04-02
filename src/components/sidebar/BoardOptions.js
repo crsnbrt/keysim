@@ -34,6 +34,7 @@ export default function BoardOptions() {
   const primaryColor = useSelector(caseActions.selectPrimaryColor);
   const style = useSelector(caseActions.selectStyle);
   const material = useSelector(caseActions.selectMaterial);
+  const knobColor = useSelector(caseActions.selectKnobColor);
   const sceneColor = useSelector(settingsActions.selectSceneColor);
 
   return (
@@ -54,6 +55,7 @@ export default function BoardOptions() {
             { label: "60% HHKB", value: "60hhkb", img: icon60hhkb },
             { label: "65%", value: "65", img: icon65 },
             { label: "75%", value: "75", img: icon75 },
+            { label: "75% Knob", value: "75knob", img: icon75 },
             { label: "80%", value: "80", img: icon80 },
             { label: "95%", value: "95", img: icon95 },
             { label: "100%", value: "100", img: icon100 },
@@ -144,6 +146,16 @@ export default function BoardOptions() {
               handler={(color) => {
                 dispatch(settingsActions.setSceneColor(color.hex));
                 dispatch(settingsActions.setSceneAutoColor(false));
+              }}
+            />
+          </div>
+
+          <div className={styles.fieldColor}>
+            <label>Knob Color</label>
+            <ColorPicker
+              color={knobColor}
+              handler={(color) => {
+                dispatch(caseActions.setKnobColor(color.hex));
               }}
             />
           </div>

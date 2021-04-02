@@ -5,6 +5,7 @@ import layout_60_hhkb from "./layout_60_hhkb.json";
 import layout_60_wkl from "./layout_60_wkl.json";
 import layout_65 from "./layout_65_default.json";
 import layout_75 from "./layout_75_default.json";
+import layout_75_knob from "./layout_75_knob.json";
 import layout_80 from "./layout_80_default.json";
 import layout_numpad from "./layout_numpad.json";
 import layout_40_ortho from "./layout_40_ortho.json";
@@ -28,6 +29,7 @@ const LAYOUTS = {
   "40ortho": layout_40_ortho,
   "50ortho": layout_50_ortho,
   leftnum: layout_40_leftnum,
+  "75knob": layout_75_knob,
 };
 
 export default LAYOUTS;
