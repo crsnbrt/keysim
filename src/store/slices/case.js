@@ -35,7 +35,6 @@ export const caseSlice = createSlice({
     setKnobColor: (state, action) => {
       state.knobColor = action.payload;
     },
-    //TODO: SET KNOB AUTO COLOUR???
   },
 });
 
