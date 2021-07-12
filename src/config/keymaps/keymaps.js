@@ -5,6 +5,7 @@ import keymap_40_leftnum from "./keymap_40_leftnum.json";
 import keymap_40 from "./keymap_40_default.json";
 import keymap_60 from "./keymap_60_default.json";
 import keymap_60_hhkb from "./keymap_60_hhkb.json";
+import keymap_60_tsangan from "./keymap_60_tsangan.json";
 import keymap_60_wkl from "./keymap_60_wkl.json";
 import keymap_60_iso from "./keymap_60_ISO.json";
 import keymap_65 from "./keymap_65_default.json";
@@ -20,6 +21,7 @@ const KEYMAPS = {
   leftnum: keymap_40_leftnum,
   "60wkl": keymap_60_wkl,
   "60hhkb": keymap_60_hhkb,
+  "60tsangan": keymap_60_tsangan,
   "60iso": keymap_60_iso,
   40: keymap_40,
   60: keymap_60,
