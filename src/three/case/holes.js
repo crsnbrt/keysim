@@ -127,9 +127,9 @@ export default (layoutName, layoutJson, bezel) => {
         getPathFromPoints(sx - gutter, sy - gutter, [
           { x: 15 + gutter * 2, y: 0 },
           { x: 0, y: 4 + gutter * 2 },
-          { x: -2.5, y: 0 },
+          { x: -1.75, y: 0 },
           { x: 0, y: 1 },
-          { x: -11.25 - gutter * 2, y: 0 },
+          { x: -12 - gutter * 2, y: 0 },
           { x: 0, y: -1 },
           { x: -1.25, y: 0 },
           { x: 0, y: -4 - gutter * 2 },
