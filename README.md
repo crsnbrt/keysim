@@ -7,6 +7,7 @@ design and test virtual 3d keyboards.
 ## getting started
 
 ```
+nvm use
 npm install
 npm start
 ```
@@ -26,3 +27,6 @@ _NOTE: Special keys from keyboards with custom firmware (e.g. [layer switching](
 ![alt example image](./public/example-2.jpg?raw=true)
 
 ![alt example image](./public/example-3.jpg?raw=true)
+
+## A note on three.js version
+This project was built before the [depreciation](https://discourse.threejs.org/t/three-geometry-will-be-removed-from-core-with-r125/22401) of `THREE.Geometry` there are currently no plans to update three past version 125 as this would require a rewrite of the case and key geometry to support BufferGeometry. 
