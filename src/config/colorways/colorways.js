@@ -69,6 +69,7 @@ import colorway_demonic from "./colorway_demonic.json";
 import colorway_nuclear_data from "./colorway_nuclear_data.json";
 import colorway_finer_things from "./colorway_finer_things.json";
 import colorway_gregory from "./colorway_gregory.json";
+import colorway_pluto from "./colorway_pluto.json";
 
 const COLORWAYS = {
   //APPEND
@@ -100,7 +101,7 @@ const COLORWAYS = {
   metropolis: colorway_metropolis,
   bushido: colorway_bushido,
   serika: colorway_serika,
-  "1976": colorway_1976,
+  1976: colorway_1976,
   shoko: colorway_shoko,
   skeletor: colorway_skeletor,
   noire: colorway_noire,
@@ -142,6 +143,7 @@ const COLORWAYS = {
   nuclear_data: colorway_nuclear_data,
   finer_things: colorway_finer_things,
   gregory: colorway_gregory,
+  pluto: colorway_pluto,
 };
 
 export default COLORWAYS;
