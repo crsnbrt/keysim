@@ -4,6 +4,7 @@ import { EditableInput } from "react-color/lib/components/common";
 import { Hue, Saturation } from "react-color/lib/components/common";
 import colorCodes from "../../config/colors/gmk";
 import pickerStyes from "./ColorPicker.module.scss";
+import ColorUtil from "../../util/color";
 
 export const MyPicker = ({ hex, hsl, hsv, onChange, onClose }) => {
   const node = useRef();
@@ -91,7 +92,15 @@ export const MyPicker = ({ hex, hsl, hsv, onChange, onClose }) => {
         <Hue hsl={hsl} onChange={onChange} />
       </div>
 
-      <EditableInput style={styles.hex} value={hex} onChange={onChange} />
+      <EditableInput
+        style={styles.hex}
+        value={hex}
+        onChange={(color) => {
+          if (ColorUtil.isValidColorString(color)) {
+            onChange(color);
+          }
+        }}
+      />
 
       <div style={{ display: "flex" }}>
         <ul aria-label="list of gmk colors" style={styles.swatches}>

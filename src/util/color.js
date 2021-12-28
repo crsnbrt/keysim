@@ -175,4 +175,9 @@ export default class ColorUtil {
     var newColor = g | (b << 8) | (r << 16);
     return "#" + newColor.toString(16);
   }
+
+  static isValidColorString(str) {
+    const reg = /^#[0-9A-F]{6}$/i;
+    return reg.test(str);
+  }
 }
