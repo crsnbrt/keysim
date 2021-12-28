@@ -30,7 +30,7 @@
       "KC_P",
       "KC_LBRC",
       "KC_RBRC",
-      "KC_BSLS",
+      "KC_DEL",
       "KC_CAPS",
       "KC_A",
       "KC_S",
@@ -57,11 +57,11 @@
       "KC_SLSH",
       "KC_RSFT",
       "MO(1)",
+      "KC_LGUI",
       "KC_LALT",
-      "KC_LCTL",
       "KC_SPC",
-      "KC_RCTL",
-      "KC_RALT"
+      "KC_RALT",
+      "KC_RGUI"
     ]
   ]
 }
