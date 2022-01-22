@@ -1,0 +1,42 @@
+{
+  "id": "firefly",
+  "label": "Firefly",
+  "manufacturer": "",
+  "swatches": {
+    "base": {
+      "background": "#1A2B3C",
+      "color": "#E09887"
+    },
+    "mods": {
+      "background": "#1A2B3C",
+      "color": "#637D96"
+    },
+    "accent": {
+      "background": "#1A2B3C",
+      "color": "#928BA6"
+    }
+  },
+  "override": {
+    "KC_GRV": "mods",
+    "KC_BSLS": "mods",
+    "KC_ENT": "mods",
+    "KC_ESC": "mods",
+    "KC_GESC": "mods",
+    "KC_F1": "mods",
+    "KC_F2": "mods",
+    "KC_F3": "mods",
+    "KC_F4": "mods",
+    "KC_F5": "mods",
+    "KC_F6": "mods",
+    "KC_F7": "mods",
+    "KC_F8": "mods",
+    "KC_F9": "mods",
+    "KC_F10": "mods",
+    "KC_F11": "mods",
+    "KC_F12": "mods",
+    "KC_TAB": "accent",
+    "KC_CAPS": "accent",
+    "KC_RALT": "accent",
+    "KC_RGUI": "accent"
+  }
+}
