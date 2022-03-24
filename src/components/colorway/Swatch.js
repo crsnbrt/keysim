@@ -4,7 +4,7 @@ import styles from "./Swatch.module.scss";
 import ColorPicker from "../elements/ColorPicker";
 
 export default function Swatch(props) {
-  const handelChange = (value, key) => {
+  const handleChange = (value, key) => {
     let newSwatch = { ...props.swatch };
     newSwatch[key] = value.hex;
     props.handler(props.name, newSwatch);
@@ -51,7 +51,7 @@ export default function Swatch(props) {
             label="Background"
             color={props.swatch.background}
             handler={(color) => {
-              handelChange(color, "background");
+              handleChange(color, "background");
             }}
           />
         </div>
@@ -62,10 +62,23 @@ export default function Swatch(props) {
             label="Legend"
             color={props.swatch.color}
             handler={(color) => {
-              handelChange(color, "color");
+              handleChange(color, "color");
             }}
           />
         </div>
+
+        {(props.name === "base" || props.name.match("swatch-")) && (
+          <div className={styles.color}>
+            <ColorPicker
+              isSwatch={true}
+              label="Sublegend"
+              color={props.swatch.subColor ?? props.swatch.color}
+              handler={(color) => {
+                handleChange(color, "subColor");
+              }}
+            />
+          </div>
+        )}
       </div>
     </li>
   );
