@@ -4,7 +4,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 1em;
   border-radius: $primary-border-radius;
   border: 1px solid transparent;
@@ -15,6 +15,7 @@
     font-size: 16px;
     color: var(--light-3);
     text-transform: capitalize;
+    justify-content: center;
   }
   button {
     padding-bottom: 0 !important;
@@ -47,4 +48,5 @@
   padding: 0 0.75em;
   display: flex;
   flex-direction: column;
+  width: 95px;
 }
