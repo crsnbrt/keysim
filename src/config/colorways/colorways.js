@@ -1,5 +1,6 @@
 //IMPORT
-import colorway_sandstorm from './colorway_sandstorm.json';
+import colorway_dracula from "./colorway_dracula.json";
+import colorway_sandstorm from "./colorway_sandstorm.json";
 import colorway_aurora_polaris from "./colorway_aurora_polaris.json";
 import colorway_port from "./colorway_port.json";
 import colorway_night_sakura from "./colorway_night_sakura.json";
@@ -74,7 +75,8 @@ import colorway_pluto from "./colorway_pluto.json";
 
 const COLORWAYS = {
   //APPEND
-'sandstorm': colorway_sandstorm,
+  dracula: colorway_dracula,
+  sandstorm: colorway_sandstorm,
   aurora_polaris: colorway_aurora_polaris,
   port: colorway_port,
   night_sakura: colorway_night_sakura,
@@ -145,7 +147,7 @@ const COLORWAYS = {
   nuclear_data: colorway_nuclear_data,
   finer_things: colorway_finer_things,
   gregory: colorway_gregory,
-  pluto: colorway_pluto,
+  pluto: colorway_pluto
 };
 
 export default COLORWAYS;
