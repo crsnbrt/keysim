@@ -75,8 +75,6 @@ import colorway_pluto from "./colorway_pluto.json";
 
 const COLORWAYS = {
   //APPEND
-  dracula: colorway_dracula,
-  sandstorm: colorway_sandstorm,
   aurora_polaris: colorway_aurora_polaris,
   port: colorway_port,
   night_sakura: colorway_night_sakura,
@@ -147,7 +145,9 @@ const COLORWAYS = {
   nuclear_data: colorway_nuclear_data,
   finer_things: colorway_finer_things,
   gregory: colorway_gregory,
-  pluto: colorway_pluto
+  pluto: colorway_pluto,
+  dracula: colorway_dracula,
+  sandstorm: colorway_sandstorm,
 };
 
 export default COLORWAYS;
