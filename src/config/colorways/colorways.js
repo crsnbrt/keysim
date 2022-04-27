@@ -1,4 +1,6 @@
 //IMPORT
+import colorway_dracula from "./colorway_dracula.json";
+import colorway_sandstorm from "./colorway_sandstorm.json";
 import colorway_aurora_polaris from "./colorway_aurora_polaris.json";
 import colorway_port from "./colorway_port.json";
 import colorway_night_sakura from "./colorway_night_sakura.json";
@@ -144,6 +146,8 @@ const COLORWAYS = {
   finer_things: colorway_finer_things,
   gregory: colorway_gregory,
   pluto: colorway_pluto,
+  dracula: colorway_dracula,
+  sandstorm: colorway_sandstorm,
 };
 
 export default COLORWAYS;

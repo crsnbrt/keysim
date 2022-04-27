@@ -1,0 +1,21 @@
+{
+  "id": "sandstorm",
+  "label": "Sandstorm",
+  "manufacturer": "GMK",
+  "designer": "Zambumon",
+  "swatches": {
+    "base": {
+      "background": "#b3a17b",
+      "color": "#dcddcf"
+    },
+    "mods": {
+      "background": "#b3a17b",
+      "color": "#dcddcf"
+    },
+    "accent": {
+      "background": "#f7f2ea",
+      "color": "#171718"
+    },
+    "override": {}
+  }
+}

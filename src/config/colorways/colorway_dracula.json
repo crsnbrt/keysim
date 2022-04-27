@@ -1,0 +1,58 @@
+{
+  "id": "dracula",
+  "label": "Dracula",
+  "manufacturer": "GMK",
+  "designer": "pikku-allu",
+  "swatches": {
+    "base": {
+      "background": "#44475a",
+      "color": "#f8f8f2"
+    },
+    "mods": {
+      "background": "#282a36",
+      "color": "#f8f8f2"
+    },
+    "accent": {
+      "background": "#282a36",
+      "color": "#f8f8f2"
+    },
+    "swatch-1": {
+      "background": "#282a36",
+      "color": "#ff79c6"
+    },
+    "swatch-2": {
+      "background": "#282a36",
+      "color": "#bd93f9"
+    },
+    "swatch-3": {
+      "background": "#282a36",
+      "color": "#8be9fd"
+    },
+    "swatch-4": {
+      "background": "#282a36",
+      "color": "#f1fa8c"
+    },
+    "swatch-5": {
+      "background": "#282a36",
+      "color": "#50fa7b"
+    },
+    "swatch-6": {
+      "background": "#282a36",
+      "color": "#ff5555"
+    }
+  },
+  "override": {
+    "KC_ENT": "swatch-2",
+    "KC_ESC": "accent",
+    "KC_GESC": "swatch-3",
+    "KC_TAB": "swatch-1",
+    "KC_RSFT": "swatch-3",
+    "KC_LSFT": "swatch-3",
+    "KC_CAPS": "swatch-2",
+    "KC_LALT": "swatch-2",
+    "KC_LCTL": "swatch-4",
+    "KC_RALT": "swatch-2",
+    "KC_RCTL": "swatch-4",
+    "KC_BSPC": "swatch-1"
+  }
+}
