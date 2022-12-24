@@ -70,6 +70,7 @@ import colorway_nuclear_data from "./colorway_nuclear_data.json";
 import colorway_finer_things from "./colorway_finer_things.json";
 import colorway_gregory from "./colorway_gregory.json";
 import colorway_pluto from "./colorway_pluto.json";
+import colorway_britishracing from "./colorway_britishracing.json";
 
 const COLORWAYS = {
   //APPEND
@@ -144,6 +145,7 @@ const COLORWAYS = {
   finer_things: colorway_finer_things,
   gregory: colorway_gregory,
   pluto: colorway_pluto,
+  britishracing: colorway_britishracing,
 };
 
 export default COLORWAYS;
